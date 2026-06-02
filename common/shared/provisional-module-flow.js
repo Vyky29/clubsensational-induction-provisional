@@ -80,7 +80,7 @@
         vCheck.checked = true;
       }
     }
-    if (state.video || isStageDone('complete', state)) {
+    if (state.video) {
       unlockStage('quiz');
     }
     if (state.quizPass) unlockStage('quiz');
@@ -96,11 +96,54 @@
 
   var video = document.getElementById('moduleVideo');
   var statusEl = document.getElementById('moduleVideoStatus');
+  var SEEK_TOLERANCE = 0.35;
+  var maxWatchedTime = 0;
+  var suppressSeekGuard = false;
+
+  function formatWatchProgress() {
+    if (!video || !video.duration || !isFinite(video.duration)) {
+      return 'Play the video from the start. You cannot skip ahead using the timeline.';
+    }
+    var pct = Math.min(100, Math.round((maxWatchedTime / video.duration) * 100));
+    return (
+      'Watched ' +
+      pct +
+      '%. You must watch the full video before the quiz — the timeline cannot be used to skip ahead.'
+    );
+  }
+
+  function persistMaxWatched(state) {
+    if (maxWatchedTime > (state.maxWatchedTime || 0)) {
+      state.maxWatchedTime = maxWatchedTime;
+      saveState(state);
+    }
+  }
+
+  function clampForwardSeek() {
+    if (!video || suppressSeekGuard) return;
+    var state = loadState();
+    if (state.video) return;
+
+    var cap = Math.max(0, maxWatchedTime);
+    if (video.currentTime > cap + SEEK_TOLERANCE) {
+      suppressSeekGuard = true;
+      video.currentTime = cap;
+      suppressSeekGuard = false;
+      if (statusEl && !state.video) {
+        statusEl.textContent = formatWatchProgress();
+        statusEl.classList.remove('is-done');
+      }
+    }
+  }
 
   function markVideoComplete() {
     var state = loadState();
     if (state.video) return;
     state.video = true;
+    if (video && video.duration && isFinite(video.duration)) {
+      state.maxWatchedTime = video.duration;
+      maxWatchedTime = video.duration;
+    }
     saveState(state);
     if (statusEl) {
       statusEl.textContent = 'Video completed. You can now open Ready for the Quiz.';
@@ -111,10 +154,56 @@
   }
 
   if (video) {
-    video.addEventListener('ended', markVideoComplete);
+    var initialState = loadState();
+    maxWatchedTime = Number(initialState.maxWatchedTime) || 0;
+    if (initialState.video) {
+      maxWatchedTime = Math.max(maxWatchedTime, video.duration || 0);
+    } else if (statusEl) {
+      statusEl.textContent = formatWatchProgress();
+    }
+
+    video.addEventListener('loadedmetadata', function () {
+      var state = loadState();
+      if (state.video) return;
+      maxWatchedTime = Math.min(Number(state.maxWatchedTime) || 0, video.duration || 0);
+      if (maxWatchedTime > 0) {
+        suppressSeekGuard = true;
+        video.currentTime = maxWatchedTime;
+        suppressSeekGuard = false;
+      }
+      if (statusEl && !state.video) statusEl.textContent = formatWatchProgress();
+    });
+
     video.addEventListener('timeupdate', function () {
-      if (!video.duration || video.duration < 10) return;
-      if (video.currentTime / video.duration >= 0.92) markVideoComplete();
+      var state = loadState();
+      if (state.video) return;
+      var t = video.currentTime;
+      if (t > maxWatchedTime + SEEK_TOLERANCE) {
+        clampForwardSeek();
+        return;
+      }
+      if (t > maxWatchedTime) {
+        maxWatchedTime = t;
+        persistMaxWatched(state);
+      }
+      if (statusEl && !state.video) statusEl.textContent = formatWatchProgress();
+    });
+
+    video.addEventListener('seeking', clampForwardSeek);
+    video.addEventListener('seeked', clampForwardSeek);
+
+    video.addEventListener('ended', function () {
+      var state = loadState();
+      if (state.video) return;
+      if (video.duration && maxWatchedTime < video.duration - SEEK_TOLERANCE) {
+        clampForwardSeek();
+        if (statusEl) {
+          statusEl.textContent =
+            'Please watch the full video without skipping. The quiz unlocks when the video finishes.';
+        }
+        return;
+      }
+      markVideoComplete();
     });
   }
 
