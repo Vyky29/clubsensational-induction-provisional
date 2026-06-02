@@ -1,19 +1,4 @@
-.module-video-shell {
-  margin-top: 18px;
-  background: #fff;
-  border: 1px solid rgba(240, 179, 35, 0.35);
-  border-radius: 18px;
-  padding: 18px;
-  box-shadow: 0 12px 28px rgba(145, 96, 9, 0.08);
-}
-
-.module-video {
-  width: 100%;
-  max-height: min(70vh, 520px);
-  border-radius: 12px;
-  background: #16324f;
-  display: block;
-}
+/* Video shell/video rules live in provisional-ui-overrides.css (#video scoped). */
 
 .module-video-status {
   margin-top: 12px;

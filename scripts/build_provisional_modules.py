@@ -72,9 +72,10 @@ def render_dashboard() -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>General Induction (Provisional) | clubSENsational</title>
 <meta name="description" content="Provisional General Induction: six modules with video and quiz." />
-<link rel="stylesheet" href="/assets/induction-pathway-hub.css" />
+<link rel="stylesheet" href="/assets/pathway-hub.css" />
 <link rel="stylesheet" href="/assets/training-content-containment.css" />
-<link rel="stylesheet" href="/assets/induction-portal-theme.css" />
+<link rel="stylesheet" href="/assets/portal-induction-atmosphere.css" />
+<link rel="stylesheet" href="/assets/induction-pathway-hub.css" />
 </head>
 <body>
 <section class="training-page" id="mainContent">
@@ -83,9 +84,9 @@ def render_dashboard() -> str:
       <div class="pathway-hero__waves" aria-hidden="true"></div>
       <div class="hero-inner hero-inner--pathway-hub">
         <div class="hero-copy">
-          <p class="brand-chip">clubSENsational | Provisional Induction</p>
+          <p class="brand-chip">clubSENsational Staff Learning</p>
           <h1 id="pathwayHubTitle">General Induction</h1>
-          <p class="hero-subtitle">Watch each module video, then complete the quiz to continue. Work through all six modules in order.</p>
+          <p class="hero-subtitle">Foundation training for all staff. Watch each module video, then complete the quiz. Work through all six modules in order.</p>
         </div>
         <div class="hero-logo-wrap">
           <img class="hero-logo" src="/assets/clubsensational-portal-logo.png" alt="clubSENsational logo">
@@ -103,12 +104,31 @@ def render_dashboard() -> str:
 """
 
 
+def provisional_descriptor(mod: dict) -> str:
+    return (
+        f"Review your place on the induction pathway, watch the module video, "
+        f"then pass the quiz to continue. {mod['subtitle']}"
+    )
+
+
+def hero_atmosphere() -> str:
+    return """          <div class="module-hero__glow"></div>
+          <div class="module-hero__signature" aria-hidden="true"></div>
+          <div class="module-hero__wave module-hero__wave--1"></div>
+          <div class="module-hero__wave module-hero__wave--2"></div>
+          <div class="module-hero__wave module-hero__wave--3"></div>
+          <span class="module-hero__orb module-hero__orb--1" aria-hidden="true"></span>
+          <span class="module-hero__orb module-hero__orb--2" aria-hidden="true"></span>
+          <span class="module-hero__orb module-hero__orb--3" aria-hidden="true"></span>
+          <span class="module-hero__orb module-hero__orb--4" aria-hidden="true"></span>"""
+
+
 def render_module(mod: dict) -> str:
     n = mod["number"]
-    bc = 0
     stages = 4
     next_href = f"/general-induction/modules/module-{n + 1}/" if n < len(MODULES) else "/general-induction/"
     next_lbl = f"Module {n + 1}" if n < len(MODULES) else "pathway"
+    descriptor = provisional_descriptor(mod)
 
     nav = """
         <a class="nav-link active" href="#overview">Overview</a>
@@ -135,6 +155,7 @@ def render_module(mod: dict) -> str:
   <link rel="stylesheet" href="/assets/induction-recap-completion-theme.css" />
   <link rel="stylesheet" href="/assets/induction-quiz-theme.css" />
   <link rel="stylesheet" href="/assets/provisional-video.css" />
+  <link rel="stylesheet" href="/assets/provisional-ui-overrides.css" />
 </head>
 <body class="training-template-body">
 <div class="portal" data-induction-module="{n}" data-provisional-induction="1">
@@ -165,16 +186,14 @@ def render_module(mod: dict) -> str:
     <div class="content">
       <section class="hero section hero--module-system" id="overview" data-stage="overview">
         <div class="module-hero__atmosphere" aria-hidden="true">
-          <div class="module-hero__glow"></div>
-          <div class="module-hero__wave module-hero__wave--1"></div>
-          <div class="module-hero__wave module-hero__wave--2"></div>
+{hero_atmosphere()}
         </div>
         <div class="section-top section-top--hero">
           <div class="hero-title-line">
             <div class="hero-title-line__stack">
               <h2>{mod['title']}</h2>
-              <p class="module-hero__descriptor">{mod['descriptor']}</p>
-              <p class="module-hero__path"><span>Journey</span><span class="module-hero__path-sep">&middot;</span><span>Video</span><span class="module-hero__path-sep">&middot;</span><span>Quiz</span></p>
+              <p class="module-hero__descriptor">{descriptor}</p>
+              <p class="module-hero__path"><span>Journey</span><span class="module-hero__path-sep" aria-hidden="true">&middot;</span><span>Video</span><span class="module-hero__path-sep" aria-hidden="true">&middot;</span><span>Quiz</span></p>
             </div>
             <div class="hero-title-line__rail"><div class="hero-heading-row"><div class="hero-module-num">MODULE {n}</div></div></div>
           </div>
@@ -183,7 +202,7 @@ def render_module(mod: dict) -> str:
       </section>
 
       <div class="module-progress-bar">
-        <div class="module-progress-top"><strong>Module Progress</strong><span id="moduleProgressText">0% completed</span></div>
+        <div class="module-progress-top"><strong>Module Progress</strong><span id="moduleProgressText">0% completed &bull; Start the module</span></div>
         <div class="module-progress-track"><div class="module-progress-fill" id="moduleProgressFill"></div></div>
       </div>
 

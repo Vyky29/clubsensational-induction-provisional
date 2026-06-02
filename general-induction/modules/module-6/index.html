@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="/assets/induction-recap-completion-theme.css" />
   <link rel="stylesheet" href="/assets/induction-quiz-theme.css" />
   <link rel="stylesheet" href="/assets/provisional-video.css" />
+  <link rel="stylesheet" href="/assets/provisional-ui-overrides.css" />
 </head>
 <body class="training-template-body">
 <div class="portal" data-induction-module="6" data-provisional-induction="1">
@@ -52,15 +53,21 @@
       <section class="hero section hero--module-system" id="overview" data-stage="overview">
         <div class="module-hero__atmosphere" aria-hidden="true">
           <div class="module-hero__glow"></div>
+          <div class="module-hero__signature" aria-hidden="true"></div>
           <div class="module-hero__wave module-hero__wave--1"></div>
           <div class="module-hero__wave module-hero__wave--2"></div>
+          <div class="module-hero__wave module-hero__wave--3"></div>
+          <span class="module-hero__orb module-hero__orb--1" aria-hidden="true"></span>
+          <span class="module-hero__orb module-hero__orb--2" aria-hidden="true"></span>
+          <span class="module-hero__orb module-hero__orb--3" aria-hidden="true"></span>
+          <span class="module-hero__orb module-hero__orb--4" aria-hidden="true"></span>
         </div>
         <div class="section-top section-top--hero">
           <div class="hero-title-line">
             <div class="hero-title-line__stack">
               <h2>Policies & Protection</h2>
-              <p class="module-hero__descriptor">Understand the policies, procedures and operational responsibilities that support safety, safeguarding and participant protection.</p>
-              <p class="module-hero__path"><span>Journey</span><span class="module-hero__path-sep">&middot;</span><span>Video</span><span class="module-hero__path-sep">&middot;</span><span>Quiz</span></p>
+              <p class="module-hero__descriptor">Review your place on the induction pathway, watch the module video, then pass the quiz to continue. Safeguarding, safety, reporting systems and policies that protect participants across all services.</p>
+              <p class="module-hero__path"><span>Journey</span><span class="module-hero__path-sep" aria-hidden="true">&middot;</span><span>Video</span><span class="module-hero__path-sep" aria-hidden="true">&middot;</span><span>Quiz</span></p>
             </div>
             <div class="hero-title-line__rail"><div class="hero-heading-row"><div class="hero-module-num">MODULE 6</div></div></div>
           </div>
@@ -69,7 +76,7 @@
       </section>
 
       <div class="module-progress-bar">
-        <div class="module-progress-top"><strong>Module Progress</strong><span id="moduleProgressText">0% completed</span></div>
+        <div class="module-progress-top"><strong>Module Progress</strong><span id="moduleProgressText">0% completed &bull; Start the module</span></div>
         <div class="module-progress-track"><div class="module-progress-fill" id="moduleProgressFill"></div></div>
       </div>
 
@@ -276,11 +283,13 @@
                       <div class="match-slot" data-correct="participant_protection"><span class="slot-label">Safeguarding</span><div class="slot-drop"></div></div>
                       <div class="match-slot" data-correct="respectful_information_handling"><span class="slot-label">Confidentiality</span><div class="slot-drop"></div></div>
                       <div class="match-slot" data-correct="organisational_accountability"><span class="slot-label">Incident Reporting</span><div class="slot-drop"></div></div>
+                      <div class="match-slot" data-correct="secure_and_appropriate_information_use"><span class="slot-label">Data Protection</span><div class="slot-drop"></div></div>
                     </div>
                     <div class="match-column match-pool" id="pool8M6">
                       <div class="match-chip" data-value="participant_protection" draggable="true">Participant protection</div>
                       <div class="match-chip" data-value="respectful_information_handling" draggable="true">Respectful information handling</div>
                       <div class="match-chip" data-value="organisational_accountability" draggable="true">Organisational accountability</div>
+                      <div class="match-chip" data-value="secure_and_appropriate_information_use" draggable="true">Secure and appropriate information use</div>
                     </div>
                   </div>
                   <div class="feedback" id="f8M6"></div>
@@ -298,7 +307,7 @@
           </div>
         </div>
       </section>
-<script>window.inductionQuizConfig = {"moduleNumber": 6, "correct": {"q1": "B", "q2": "B", "q3": "A", "q4": ["A", "B", "C"], "q5": ["A", "B", "C"], "q6": "T", "q7": "T"}, "matchFeedback": "Safeguarding -> Participant protection; Confidentiality -> Respectful information handling; Incident Reporting -> Organisational accountability."};</script>
+<script>window.inductionQuizConfig = {"moduleNumber": 6, "correct": {"q1": "B", "q2": "B", "q3": "A", "q4": ["A", "B", "C"], "q5": ["A", "B", "C"], "q6": "T", "q7": "T"}, "matchFeedback": "Safeguarding -> Participant protection; Confidentiality -> Respectful information handling; Incident Reporting -> Organisational accountability; Data Protection -> Secure and appropriate information use."};</script>
     </div>
   </main>
 </div>

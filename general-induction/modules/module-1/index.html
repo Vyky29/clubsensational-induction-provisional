@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="/assets/induction-recap-completion-theme.css" />
   <link rel="stylesheet" href="/assets/induction-quiz-theme.css" />
   <link rel="stylesheet" href="/assets/provisional-video.css" />
+  <link rel="stylesheet" href="/assets/provisional-ui-overrides.css" />
 </head>
 <body class="training-template-body">
 <div class="portal" data-induction-module="1" data-provisional-induction="1">
@@ -52,15 +53,21 @@
       <section class="hero section hero--module-system" id="overview" data-stage="overview">
         <div class="module-hero__atmosphere" aria-hidden="true">
           <div class="module-hero__glow"></div>
+          <div class="module-hero__signature" aria-hidden="true"></div>
           <div class="module-hero__wave module-hero__wave--1"></div>
           <div class="module-hero__wave module-hero__wave--2"></div>
+          <div class="module-hero__wave module-hero__wave--3"></div>
+          <span class="module-hero__orb module-hero__orb--1" aria-hidden="true"></span>
+          <span class="module-hero__orb module-hero__orb--2" aria-hidden="true"></span>
+          <span class="module-hero__orb module-hero__orb--3" aria-hidden="true"></span>
+          <span class="module-hero__orb module-hero__orb--4" aria-hidden="true"></span>
         </div>
         <div class="section-top section-top--hero">
           <div class="hero-title-line">
             <div class="hero-title-line__stack">
               <h2>Welcome to clubSENsational</h2>
-              <p class="module-hero__descriptor">Start with our story, mission, impact and partners before you open the teaching blocks.</p>
-              <p class="module-hero__path"><span>Journey</span><span class="module-hero__path-sep">&middot;</span><span>Video</span><span class="module-hero__path-sep">&middot;</span><span>Quiz</span></p>
+              <p class="module-hero__descriptor">Review your place on the induction pathway, watch the module video, then pass the quiz to continue. Who we are, our purpose and what makes clubSENsational distinctive.</p>
+              <p class="module-hero__path"><span>Journey</span><span class="module-hero__path-sep" aria-hidden="true">&middot;</span><span>Video</span><span class="module-hero__path-sep" aria-hidden="true">&middot;</span><span>Quiz</span></p>
             </div>
             <div class="hero-title-line__rail"><div class="hero-heading-row"><div class="hero-module-num">MODULE 1</div></div></div>
           </div>
@@ -69,7 +76,7 @@
       </section>
 
       <div class="module-progress-bar">
-        <div class="module-progress-top"><strong>Module Progress</strong><span id="moduleProgressText">0% completed</span></div>
+        <div class="module-progress-top"><strong>Module Progress</strong><span id="moduleProgressText">0% completed &bull; Start the module</span></div>
         <div class="module-progress-track"><div class="module-progress-fill" id="moduleProgressFill"></div></div>
       </div>
 
@@ -276,11 +283,13 @@
                       <div class="match-slot" data-correct="meaningful_participation"><span class="slot-label">Mission</span><div class="slot-drop"></div></div>
                       <div class="match-slot" data-correct="individual_adaptation"><span class="slot-label">Person Centred Support</span><div class="slot-drop"></div></div>
                       <div class="match-slot" data-correct="predictability_and_structure"><span class="slot-label">Consistency</span><div class="slot-drop"></div></div>
+                      <div class="match-slot" data-correct="collaboration_and_shared_resources"><span class="slot-label">Key Partners</span><div class="slot-drop"></div></div>
                     </div>
                     <div class="match-column match-pool" id="pool8M1">
                       <div class="match-chip" data-value="meaningful_participation" draggable="true">Meaningful participation</div>
                       <div class="match-chip" data-value="individual_adaptation" draggable="true">Individual adaptation</div>
                       <div class="match-chip" data-value="predictability_and_structure" draggable="true">Predictability and structure</div>
+                      <div class="match-chip" data-value="collaboration_and_shared_resources" draggable="true">Collaboration and shared resources</div>
                     </div>
                   </div>
                   <div class="feedback" id="f8M1"></div>
@@ -298,7 +307,7 @@
           </div>
         </div>
       </section>
-<script>window.inductionQuizConfig = {"moduleNumber": 1, "correct": {"q1": "B", "q2": "B", "q3": "B", "q4": ["A", "B", "C"], "q5": ["A", "B", "C"], "q6": "F", "q7": "T"}, "matchFeedback": "Mission -> Meaningful participation; Person Centred Support -> Individual adaptation; Consistency -> Predictability and structure."};</script>
+<script>window.inductionQuizConfig = {"moduleNumber": 1, "correct": {"q1": "B", "q2": "B", "q3": "B", "q4": ["A", "B", "C"], "q5": ["A", "B", "C"], "q6": "F", "q7": "T"}, "matchFeedback": "Mission -> Meaningful participation; Person Centred Support -> Individual adaptation; Consistency -> Predictability and structure; Key Partners -> Collaboration and shared resources."};</script>
     </div>
   </main>
 </div>
