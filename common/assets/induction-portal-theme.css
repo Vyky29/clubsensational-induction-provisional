@@ -73,6 +73,21 @@
   color:rgba(15,40,64,.72) !important;
 }
 
+.portal .hero.hero--module-system .hero-title-line__stack .module-hero__kicker{
+  color:rgba(15,40,64,.72) !important;
+}
+
+.portal .hero.hero--module-system .hero-title-line__stack .module-hero__descriptor,
+.portal .hero.hero--module-system .hero-title-line__stack .module-hero__path{
+  opacity:1 !important;
+}
+
+.portal .hero.hero--module-system .btn.btn-primary{
+  color:var(--title-navy) !important;
+  background:linear-gradient(135deg,#fff 0%,#fffaf0 100%) !important;
+  border:1px solid rgba(15,40,64,.1) !important;
+}
+
 .portal .section-pill{
   background:rgba(240,179,35,.18);
   color:#7a5200;

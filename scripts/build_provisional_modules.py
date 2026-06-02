@@ -128,7 +128,7 @@ def render_module(mod: dict) -> str:
     stages = 4
     next_href = f"/general-induction/modules/module-{n + 1}/" if n < len(MODULES) else "/general-induction/"
     next_lbl = f"Module {n + 1}" if n < len(MODULES) else "pathway"
-    descriptor = provisional_descriptor(mod)
+    descriptor = mod.get("subtitle") or provisional_descriptor(mod)
 
     nav = """
         <a class="nav-link active" href="#overview">Overview</a>
@@ -156,6 +156,7 @@ def render_module(mod: dict) -> str:
   <link rel="stylesheet" href="/assets/induction-quiz-theme.css" />
   <link rel="stylesheet" href="/assets/provisional-video.css" />
   <link rel="stylesheet" href="/assets/provisional-ui-overrides.css" />
+  <link rel="stylesheet" href="/assets/induction-portal-theme.css" />
 </head>
 <body class="training-template-body">
 <div class="portal" data-induction-module="{n}" data-provisional-induction="1">
@@ -191,6 +192,7 @@ def render_module(mod: dict) -> str:
         <div class="section-top section-top--hero">
           <div class="hero-title-line">
             <div class="hero-title-line__stack">
+              <p class="module-hero__kicker">General Induction &middot; Module {n}</p>
               <h2>{mod['title']}</h2>
               <p class="module-hero__descriptor">{descriptor}</p>
               <p class="module-hero__path"><span>Journey</span><span class="module-hero__path-sep" aria-hidden="true">&middot;</span><span>Video</span><span class="module-hero__path-sep" aria-hidden="true">&middot;</span><span>Quiz</span></p>
