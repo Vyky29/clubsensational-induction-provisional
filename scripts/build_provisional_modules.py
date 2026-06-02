@@ -129,6 +129,35 @@ def provisional_descriptor(mod: dict) -> str:
     )
 
 
+def outcomes_section_html(mod: dict) -> str:
+    items = "\n".join(
+        f"""            <div class="outcome clickable-progress" data-outcome-item="{i}">
+              <span class="outcome-index" aria-hidden="true"></span>
+              <div>{text}</div>
+            </div>"""
+        for i, text in enumerate(mod["outcomes"], 1)
+    )
+    return f"""      <section class="section gated-locked" id="outcomes" data-stage="outcomes" data-unlock-after="journey">
+        <div class="section-top"><span class="section-pill">Learning Outcomes</span></div>
+        <div class="section-body">
+          <div class="section-lock-banner">Complete the Induction Journey section to unlock Learning Outcomes.</div>
+          <div class="section-title-row">
+            <h3>What will you understand by the end of this module?</h3>
+          </div>
+          <div class="outcomes" data-outcomes-group="outcomes">
+{items}
+          </div>
+          <div class="stage-helper" id="outcomesHelper">Review each learning outcome to unlock the confirmation below.</div>
+          <label class="check-item clickable-progress">
+            <input type="checkbox" class="overall-check" data-stage-check="outcomes" id="outcomesCheck" disabled>
+            <span>I have reviewed the learning outcomes and I am clear on what this module will help me understand.</span>
+          </label>
+        </div>
+      </section>
+
+"""
+
+
 def hero_atmosphere() -> str:
     return """          <div class="module-hero__glow"></div>
           <div class="module-hero__signature" aria-hidden="true"></div>
@@ -143,7 +172,7 @@ def hero_atmosphere() -> str:
 
 def render_module(mod: dict) -> str:
     n = mod["number"]
-    stages = 4
+    stages = 5
     next_href = f"/general-induction/modules/module-{n + 1}/" if n < len(MODULES) else "/general-induction/"
     next_lbl = f"Module {n + 1}" if n < len(MODULES) else "pathway"
     descriptor = mod.get("subtitle") or provisional_descriptor(mod)
@@ -151,6 +180,7 @@ def render_module(mod: dict) -> str:
     nav = """
         <a class="nav-link active" href="#overview">Overview</a>
         <a class="nav-link" href="#journey">Induction Journey</a>
+        <a class="nav-link" href="#outcomes">Learning Outcomes</a>
         <a class="nav-link" href="#video">Module Video</a>
         <a class="nav-link" href="#complete">Completion</a>
         <a class="nav-link" href="#quiz">Quiz</a>"""
@@ -198,7 +228,7 @@ def render_module(mod: dict) -> str:
         <span id="overallProgressText">0% completed</span>
         <span id="overallProgressCount">0 / {stages}</span>
       </div>
-      <p class="small-note">Complete the journey review, watch the video, then pass the quiz.</p>
+      <p class="small-note">Complete the journey, review learning outcomes, watch the video, then pass the quiz.</p>
     </div>
   </aside>
 
@@ -214,7 +244,7 @@ def render_module(mod: dict) -> str:
               <p class="module-hero__kicker">General Induction &middot; Module {n}</p>
               <h2>{mod['title']}</h2>
               <p class="module-hero__descriptor">{descriptor}</p>
-              <p class="module-hero__path"><span>Journey</span><span class="module-hero__path-sep" aria-hidden="true">&middot;</span><span>Video</span><span class="module-hero__path-sep" aria-hidden="true">&middot;</span><span>Quiz</span></p>
+              <p class="module-hero__path"><span>Journey</span><span class="module-hero__path-sep" aria-hidden="true">&middot;</span><span>Outcomes</span><span class="module-hero__path-sep" aria-hidden="true">&middot;</span><span>Video</span><span class="module-hero__path-sep" aria-hidden="true">&middot;</span><span>Quiz</span></p>
             </div>
             <div class="hero-title-line__rail"><div class="hero-heading-row"><div class="hero-module-num">MODULE {n}</div></div></div>
           </div>
@@ -247,10 +277,11 @@ def render_module(mod: dict) -> str:
         </div>
       </section>
 
-      <section class="section gated-locked" id="video" data-stage="video" data-unlock-after="journey">
+{outcomes_section_html(mod)}
+      <section class="section gated-locked" id="video" data-stage="video" data-unlock-after="outcomes">
         <div class="section-top"><span class="section-pill">Module Video</span></div>
         <div class="section-body">
-          <div class="section-lock-banner">Complete the Induction Journey section to unlock the module video.</div>
+          <div class="section-lock-banner">Complete the Learning Outcomes section to unlock the module video.</div>
           <div class="section-title-row"><h3>Watch the module video</h3></div>
           <p class="lead">Watch the full video from start to finish before the quiz. You cannot skip ahead using the video timeline.</p>
           <div class="module-video-shell">
@@ -272,7 +303,7 @@ def render_module(mod: dict) -> str:
             <div class="completion-atmosphere" aria-hidden="true"></div>
             <div class="completion-inner">
               <div class="completion-pathway" role="presentation" aria-hidden="true">
-                <span>Journey</span><span class="completion-pathway__sep">&middot;</span><span>Video</span><span class="completion-pathway__sep">&middot;</span><span class="completion-pathway__quiz">Quiz</span>
+                <span>Journey</span><span class="completion-pathway__sep">&middot;</span><span>Outcomes</span><span class="completion-pathway__sep">&middot;</span><span>Video</span><span class="completion-pathway__sep">&middot;</span><span class="completion-pathway__quiz">Quiz</span>
               </div>
               <h3 class="completion-title">Ready for the Quiz</h3>
               <div class="completion-body">

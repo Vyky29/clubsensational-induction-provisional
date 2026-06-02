@@ -4,7 +4,7 @@
 
   var moduleNum = portal.getAttribute('data-induction-module');
   var storageKey = 'provisional-induction-module-' + moduleNum;
-  var stageOrder = ['journey', 'video', 'complete', 'quiz'];
+  var stageOrder = ['journey', 'outcomes', 'video', 'complete', 'quiz'];
   var totalStages = stageOrder.length;
 
   function loadState() {
@@ -68,8 +68,12 @@
   }
 
   function applyUnlocks(state) {
-    var journeyDone = isStageDone('journey', state);
-    if (journeyDone) unlockStage('video');
+    if (isStageDone('journey', state)) {
+      unlockStage('outcomes');
+    }
+    if (isStageDone('outcomes', state)) {
+      unlockStage('video');
+    }
     if (state.video) {
       unlockStage('complete');
       var wrap = document.getElementById('videoCompleteWrap');
@@ -83,7 +87,79 @@
     if (state.video) {
       unlockStage('quiz');
     }
-    if (state.quizPass) unlockStage('quiz');
+    if (state.quizPass) {
+      unlockStage('quiz');
+    }
+  }
+
+  function initOutcomes() {
+    var outcomesSection = document.getElementById('outcomes');
+    if (!outcomesSection) return;
+
+    var items = outcomesSection.querySelectorAll('[data-outcome-item]');
+    var outcomesCheck = document.getElementById('outcomesCheck');
+    var helper = document.getElementById('outcomesHelper');
+    var total = items.length;
+
+    function reviewedCount() {
+      var n = 0;
+      items.forEach(function (item) {
+        if (item.classList.contains('clicked')) n++;
+      });
+      return n;
+    }
+
+    function updateOutcomesHelper() {
+      if (!helper) return;
+      var done = reviewedCount();
+      var journeyDone = isStageDone('journey', loadState());
+      if (!journeyDone) {
+        helper.textContent =
+          'Complete the Induction Journey section to unlock Learning Outcomes.';
+        return;
+      }
+      if (done >= total) {
+        helper.textContent =
+          'All learning outcomes reviewed. Tick the box below when you are ready to continue.';
+      } else {
+        helper.textContent =
+          'Review each learning outcome to unlock the confirmation below (' +
+          done +
+          ' of ' +
+          total +
+          ' reviewed).';
+      }
+    }
+
+    function updateOutcomesCheck() {
+      if (!outcomesCheck) return;
+      var journeyDone = isStageDone('journey', loadState());
+      var allReviewed = reviewedCount() >= total;
+      outcomesCheck.disabled = !journeyDone || !allReviewed;
+      if (!journeyDone) {
+        outcomesCheck.checked = false;
+      }
+    }
+
+    items.forEach(function (item) {
+      item.addEventListener('click', function () {
+        if (!isStageDone('journey', loadState())) return;
+        item.classList.toggle('clicked');
+        updateOutcomesHelper();
+        updateOutcomesCheck();
+      });
+    });
+
+    document.querySelectorAll('[data-stage-check="outcomes"]').forEach(function (input) {
+      input.addEventListener('change', function () {
+        var state = loadState();
+        applyUnlocks(state);
+        refreshProgress();
+      });
+    });
+
+    updateOutcomesHelper();
+    updateOutcomesCheck();
   }
 
   document.querySelectorAll('[data-stage-check="journey"]').forEach(function (input) {
@@ -91,6 +167,7 @@
       var state = loadState();
       applyUnlocks(state);
       refreshProgress();
+      initOutcomes();
     });
   });
 
@@ -108,7 +185,7 @@
     return (
       'Watched ' +
       pct +
-      '%. You must watch the full video before the quiz — the timeline cannot be used to skip ahead.'
+      '%. You must watch the full video before the quiz - the timeline cannot be used to skip ahead.'
     );
   }
 
@@ -251,6 +328,7 @@
   window.provisionalInductionGetState = loadState;
   window.inductionRefreshProgress = refreshProgress;
 
+  initOutcomes();
   var state = loadState();
   applyUnlocks(state);
   refreshProgress();

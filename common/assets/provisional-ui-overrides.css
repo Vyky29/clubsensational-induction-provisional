@@ -116,7 +116,7 @@
   box-shadow: 0 18px 40px rgba(145, 96, 9, 0.14);
 }
 
-/* Aqua wave layers bleach orange heroes — keep them very subtle */
+/* Aqua wave layers bleach orange heroes  keep them very subtle */
 .portal[data-provisional-induction] .hero.hero--module-system > .module-hero__atmosphere::before,
 .portal[data-provisional-induction] .hero.hero--module-system > .module-hero__atmosphere::after {
   opacity: 0.05 !important;
@@ -211,4 +211,33 @@
 .portal #quiz.is-unlocked .section-body > * {
   opacity: 1 !important;
   pointer-events: auto !important;
+}
+
+/* ----- Learning outcomes (after journey) ----- */
+.portal .stage-helper {
+  margin: 18px 0 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #7a5200;
+  line-height: 1.55;
+}
+
+.portal #outcomes .outcome.clicked {
+  border: 2px solid rgba(240, 179, 35, 0.55);
+  background: linear-gradient(180deg, #fffaf0 0%, #fff4de 100%);
+  box-shadow: 0 4px 14px rgba(145, 96, 9, 0.12);
+}
+
+.portal #outcomes .outcome-index::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #f0b323;
+  box-shadow: 0 0 0 3px rgba(240, 179, 35, 0.22);
+}
+
+.portal #outcomes .section-title-row h3 {
+  color: #0f2840 !important;
 }
