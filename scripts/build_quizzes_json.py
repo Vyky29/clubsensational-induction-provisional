@@ -1,0 +1,583 @@
+#!/usr/bin/env python3
+"""Regenerate induction_quizzes.json from the approved module quiz bank."""
+import json
+from pathlib import Path
+
+OUT = Path(__file__).parent / "induction_quizzes.json"
+
+QUIZZES = {
+    "1": {
+        "hero_subtitle": "Test your understanding of clubSENsational, our mission and approach.",
+        "questions": [
+            {
+                "type": "single",
+                "text": "What year was clubSENsational originally founded?",
+                "options": [
+                    {"letter": "A", "text": "2010"},
+                    {"letter": "B", "text": "2015"},
+                    {"letter": "C", "text": "2021"},
+                    {"letter": "D", "text": "2025"},
+                ],
+                "correct": "C",
+            },
+            {
+                "type": "single",
+                "text": "What is the main focus of clubSENsational\u2019s mission?",
+                "options": [
+                    {"letter": "A", "text": "Academic improvement for children"},
+                    {
+                        "letter": "B",
+                        "text": "Financial literacy for neurodivergent adults",
+                    },
+                    {
+                        "letter": "C",
+                        "text": "Empowering neurodivergent individuals through inclusive, tailored support",
+                    },
+                    {"letter": "D", "text": "Job placement services"},
+                ],
+                "correct": "C",
+            },
+            {
+                "type": "single",
+                "text": "Which of the following best describes \u201cExecutive Functioning Skills\u201d?",
+                "options": [
+                    {"letter": "A", "text": "Verbal articulation exercises"},
+                    {"letter": "B", "text": "Organising, planning, and managing tasks"},
+                    {"letter": "C", "text": "Emotional resilience"},
+                    {"letter": "D", "text": "Swimming coordination"},
+                ],
+                "correct": "B",
+            },
+            {
+                "type": "multiple",
+                "text": "Which of these are part of the three pillars of our mission? (Select all that apply)",
+                "options": [
+                    {"letter": "A", "text": "Social communication"},
+                    {"letter": "B", "text": "Physical and emotional wellbeing"},
+                    {"letter": "C", "text": "Behavioural control"},
+                    {"letter": "D", "text": "Independence"},
+                ],
+                "correct": ["A", "B", "D"],
+            },
+            {
+                "type": "multiple",
+                "text": "What are some tools used to support clients\u2019 communication at clubSENsational? (Select all that apply)",
+                "options": [
+                    {"letter": "A", "text": "PECS"},
+                    {"letter": "B", "text": "Makaton"},
+                    {"letter": "C", "text": "Picture books"},
+                    {"letter": "D", "text": "Speech-generating devices"},
+                ],
+                "correct": ["A", "B", "D"],
+            },
+            {
+                "type": "tf",
+                "text": "Visual tools like First-Then boards and social stories help reduce anxiety and support understanding.",
+                "correct": "T",
+            },
+            {
+                "type": "tf",
+                "text": "Every client at clubSENsational uses spoken language to communicate.",
+                "correct": "F",
+            },
+            {
+                "type": "match",
+                "text": "Match the following.",
+                "pairs": [
+                    {
+                        "label": "Social Communication",
+                        "answer": "Express needs and interact socially",
+                    },
+                    {
+                        "label": "Independence",
+                        "answer": "Develop daily living skills",
+                    },
+                    {
+                        "label": "Emotional Regulation",
+                        "answer": "Recognise and manage feelings",
+                    },
+                ],
+            },
+        ],
+    },
+    "2": {
+        "hero_subtitle": "Test your understanding of teams, departments and how we work together.",
+        "questions": [
+            {
+                "type": "single",
+                "text": "Who leads decision-making and strategic planning at clubSENsational?",
+                "options": [
+                    {"letter": "A", "text": "Admin Coordinators"},
+                    {"letter": "B", "text": "Team Leaders"},
+                    {"letter": "C", "text": "Management Team"},
+                    {"letter": "D", "text": "Venue Supervisor"},
+                ],
+                "correct": "C",
+            },
+            {
+                "type": "single",
+                "text": "Which department manages rotas, schedules, and links families with staff?",
+                "options": [
+                    {"letter": "A", "text": "Finance"},
+                    {"letter": "B", "text": "Admin"},
+                    {"letter": "C", "text": "HR"},
+                    {"letter": "D", "text": "Service Delivery Team"},
+                ],
+                "correct": "B",
+            },
+            {
+                "type": "single",
+                "text": "Who supports frontline staff and is the first point of contact on-site?",
+                "options": [
+                    {"letter": "A", "text": "Service Manager"},
+                    {"letter": "B", "text": "Management Team"},
+                    {"letter": "C", "text": "HR"},
+                    {"letter": "D", "text": "Admin"},
+                ],
+                "correct": "A",
+            },
+            {
+                "type": "multiple",
+                "text": "Which teams are part of the Service Delivery group?",
+                "options": [
+                    {"letter": "A", "text": "Swimming Instructors"},
+                    {"letter": "B", "text": "Climbing Instructors"},
+                    {"letter": "C", "text": "Admin Team"},
+                    {"letter": "D", "text": "Support Worker"},
+                ],
+                "correct": ["A", "B", "D"],
+            },
+            {
+                "type": "multiple",
+                "text": "What are the responsibilities of Swimming Instructors at clubSENsational? (Select all that apply)",
+                "options": [
+                    {"letter": "A", "text": "Build aquatic confidence"},
+                    {"letter": "B", "text": "Lead adapted swimming sessions"},
+                    {"letter": "C", "text": "Write venue maintenance reports"},
+                    {"letter": "D", "text": "Make water relaxing and enjoyable"},
+                ],
+                "correct": ["A", "B", "D"],
+            },
+            {
+                "type": "tf",
+                "text": "Admins play a key role in coordinating schedules and sharing updates.",
+                "correct": "T",
+            },
+            {
+                "type": "tf",
+                "text": "Finance is responsible for reporting, payments, and service cost tracking.",
+                "correct": "T",
+            },
+            {
+                "type": "match",
+                "text": "Match the following.",
+                "pairs": [
+                    {
+                        "label": "Support Workers",
+                        "answer": "Structured routines and participation",
+                    },
+                    {
+                        "label": "Climbing Instructors",
+                        "answer": "Confidence and motor planning",
+                    },
+                    {
+                        "label": "Swimming Instructors",
+                        "answer": "Aquatic safety and enjoyment",
+                    },
+                    {
+                        "label": "Fitness Instructors",
+                        "answer": "Movement and self-esteem",
+                    },
+                ],
+            },
+        ],
+    },
+    "3": {
+        "hero_subtitle": "Test your understanding of services, venues and adaptable support.",
+        "questions": [
+            {
+                "type": "single",
+                "text": "Which of these services is designed for highly individualised support, outside group settings?",
+                "options": [
+                    {"letter": "A", "text": "Consulting & Training"},
+                    {"letter": "B", "text": "Be-Spoke Programmes"},
+                    {"letter": "C", "text": "Climbing"},
+                    {"letter": "D", "text": "Swimming"},
+                ],
+                "correct": "B",
+            },
+            {
+                "type": "single",
+                "text": "Which service is specifically designed for families who prefer online emotional support?",
+                "options": [
+                    {"letter": "A", "text": "Be-Spoke"},
+                    {"letter": "B", "text": "Counselling"},
+                    {"letter": "C", "text": "FitFun"},
+                    {"letter": "D", "text": "Crash Courses & Camps"},
+                ],
+                "correct": "B",
+            },
+            {
+                "type": "single",
+                "text": "What type of sessions are typically offered during school holidays?",
+                "options": [
+                    {"letter": "A", "text": "Splash & Connect"},
+                    {"letter": "B", "text": "Crash Courses & Camps"},
+                    {"letter": "C", "text": "Counselling"},
+                    {"letter": "D", "text": "Fitness"},
+                ],
+                "correct": "B",
+            },
+            {
+                "type": "multiple",
+                "text": "What are some of the key goals of FitFun sessions? (Select all that apply)",
+                "options": [
+                    {"letter": "A", "text": "Multi-sports activities"},
+                    {"letter": "B", "text": "Play-based movement"},
+                    {"letter": "C", "text": "Literacy development"},
+                    {"letter": "D", "text": "Sensory regulation"},
+                ],
+                "correct": ["A", "B", "D"],
+            },
+            {
+                "type": "multiple",
+                "text": "Where is swimming delivered? (Select all that apply)",
+                "options": [
+                    {"letter": "A", "text": "Acton Centre"},
+                    {"letter": "B", "text": "Northolt Centre"},
+                    {"letter": "C", "text": "SwimFarm"},
+                    {"letter": "D", "text": "clubSENsational Hub"},
+                ],
+                "correct": ["A", "B", "C"],
+            },
+            {
+                "type": "tf",
+                "text": "Be-Spoke sessions are delivered in large group formats only.",
+                "correct": "F",
+            },
+            {
+                "type": "tf",
+                "text": "All venues used by clubSENsational are public leisure centres.",
+                "correct": "F",
+            },
+            {
+                "type": "match",
+                "text": "Match the following.",
+                "pairs": [
+                    {
+                        "label": "Swimming",
+                        "answer": "Promotes regulation and aquatic confidence",
+                    },
+                    {
+                        "label": "Climbing",
+                        "answer": "Builds focus, motor planning and body control",
+                    },
+                    {
+                        "label": "FitFun",
+                        "answer": "Movement-based play and self-esteem",
+                    },
+                    {
+                        "label": "Splash & Connect",
+                        "answer": "Social engagement and sensory water play",
+                    },
+                ],
+            },
+        ],
+    },
+    "4": {
+        "hero_subtitle": "Test your understanding of our clients and person centred support.",
+        "questions": [
+            {
+                "type": "single",
+                "text": "What is the first priority when starting to work with a new client?",
+                "options": [
+                    {"letter": "A", "text": "Helping them complete academic tasks"},
+                    {"letter": "B", "text": "Establishing structure and feeling safe"},
+                    {"letter": "C", "text": "Introducing them to every team member"},
+                    {"letter": "D", "text": "Asking them to set their own goals"},
+                ],
+                "correct": "B",
+            },
+            {
+                "type": "single",
+                "text": "Which area is part of clubSENsational\u2019s core skill development focus?",
+                "options": [
+                    {"letter": "A", "text": "Reading fluency"},
+                    {"letter": "B", "text": "Formal testing"},
+                    {"letter": "C", "text": "Emotional and physical regulation"},
+                    {"letter": "D", "text": "Fine motor writing"},
+                ],
+                "correct": "C",
+            },
+            {
+                "type": "single",
+                "text": "What is the purpose of using AAC tools or visuals in a session?",
+                "options": [
+                    {"letter": "A", "text": "To replace staff-led interaction"},
+                    {"letter": "B", "text": "To support understanding and expression"},
+                    {"letter": "C", "text": "To allow the client to leave early"},
+                    {"letter": "D", "text": "To avoid verbal communication"},
+                ],
+                "correct": "B",
+            },
+            {
+                "type": "multiple",
+                "text": "Which strategies help build trust and engagement with clients? (Select all that apply)",
+                "options": [
+                    {"letter": "A", "text": "Offering structure and visual cues"},
+                    {"letter": "B", "text": "Following the client\u2019s lead"},
+                    {"letter": "C", "text": "Creating a calm and predictable space"},
+                    {"letter": "D", "text": "Rushing through activities"},
+                ],
+                "correct": ["A", "B", "C"],
+            },
+            {
+                "type": "multiple",
+                "text": "What are signs that a client may be dysregulated? (Select all that apply)",
+                "options": [
+                    {"letter": "A", "text": "Emotional outbursts"},
+                    {"letter": "B", "text": "Avoidance or shutdown"},
+                    {"letter": "C", "text": "Calm and focused behaviour"},
+                    {"letter": "D", "text": "Increased noise sensitivity"},
+                ],
+                "correct": ["A", "B", "D"],
+            },
+            {
+                "type": "tf",
+                "text": "All clients must follow the same structure and activities regardless of their profile.",
+                "correct": "F",
+            },
+            {
+                "type": "tf",
+                "text": "Engaging through play can support emotional regulation and communication development.",
+                "correct": "T",
+            },
+            {
+                "type": "match",
+                "text": "Match the following.",
+                "pairs": [
+                    {
+                        "label": "Visual Schedules",
+                        "answer": "Support understanding of routines",
+                    },
+                    {
+                        "label": "Sensory Regulation",
+                        "answer": "Help manage emotional and physical states",
+                    },
+                    {
+                        "label": "Following the Client\u2019s Lead",
+                        "answer": "Build trust and meaningful engagement",
+                    },
+                    {
+                        "label": "AAC Tools",
+                        "answer": "Allow alternative ways to communicate",
+                    },
+                ],
+            },
+        ],
+    },
+    "5": {
+        "hero_subtitle": "Test your understanding of your role, professionalism and session delivery.",
+        "questions": [
+            {
+                "type": "single",
+                "text": "What is the first step to ensure a safe and prepared environment before a session begins?",
+                "options": [
+                    {"letter": "A", "text": "Wait until the client arrives"},
+                    {"letter": "B", "text": "Ask admin for instructions"},
+                    {"letter": "C", "text": "Check equipment and the environment"},
+                    {"letter": "D", "text": "Begin the activity immediately"},
+                ],
+                "correct": "C",
+            },
+            {
+                "type": "single",
+                "text": "Which of the following reflects appropriate communication with colleagues?",
+                "options": [
+                    {"letter": "A", "text": "Avoid giving feedback"},
+                    {"letter": "B", "text": "Use respectful, solution-focused language"},
+                    {"letter": "C", "text": "Always escalate everything to the manager"},
+                    {"letter": "D", "text": "Communicate only during sessions"},
+                ],
+                "correct": "B",
+            },
+            {
+                "type": "single",
+                "text": "When representing clubSENsational at a venue, you should:",
+                "options": [
+                    {"letter": "A", "text": "Only follow your own professional instincts"},
+                    {"letter": "B", "text": "Act independently of company policy"},
+                    {
+                        "letter": "C",
+                        "text": "Represent the organisation\u2019s values and expectations",
+                    },
+                    {"letter": "D", "text": "Speak only if spoken to"},
+                ],
+                "correct": "C",
+            },
+            {
+                "type": "multiple",
+                "text": "What does \u201cProfessionalism\u201d mean at clubSENsational? (Select all that apply)",
+                "options": [
+                    {"letter": "A", "text": "Being on time and well-prepared"},
+                    {"letter": "B", "text": "Using personal phones during sessions"},
+                    {"letter": "C", "text": "Following agreed communication protocols"},
+                    {"letter": "D", "text": "Upholding safety and behaviour standards"},
+                ],
+                "correct": ["A", "C", "D"],
+            },
+            {
+                "type": "multiple",
+                "text": "What are your duties regarding session delivery? (Select all that apply)",
+                "options": [
+                    {"letter": "A", "text": "Adapt activities to individual profiles"},
+                    {"letter": "B", "text": "Lead sessions independently with no planning"},
+                    {"letter": "C", "text": "Deliver sessions in line with club structure"},
+                    {"letter": "D", "text": "Ensure engagement and safety"},
+                ],
+                "correct": ["A", "C", "D"],
+            },
+            {
+                "type": "tf",
+                "text": "You are responsible for flagging any safeguarding concerns, even if they seem minor.",
+                "correct": "T",
+            },
+            {
+                "type": "tf",
+                "text": "Using the agreed communication channels helps ensure consistency and professionalism across the team.",
+                "correct": "T",
+            },
+            {
+                "type": "match",
+                "text": "Match the following.",
+                "pairs": [
+                    {
+                        "label": "Check environment",
+                        "answer": "Safety and preparation",
+                    },
+                    {
+                        "label": "Use respectful language",
+                        "answer": "Communication and teamwork",
+                    },
+                    {
+                        "label": "Follow structure and adapt",
+                        "answer": "Session delivery",
+                    },
+                    {
+                        "label": "Wear uniform appropriately",
+                        "answer": "Professional image",
+                    },
+                ],
+            },
+        ],
+    },
+    "6": {
+        "hero_subtitle": "Test your understanding of safeguarding, policies and professional protection.",
+        "questions": [
+            {
+                "type": "single",
+                "text": "What is the correct first step if you witness or suspect a safeguarding concern?",
+                "options": [
+                    {"letter": "A", "text": "Wait to see if it happens again"},
+                    {"letter": "B", "text": "Discuss it in the group chat"},
+                    {"letter": "C", "text": "Report it to the Safeguarding Lead immediately"},
+                    {"letter": "D", "text": "Tell the client to speak up"},
+                ],
+                "correct": "C",
+            },
+            {
+                "type": "single",
+                "text": "Which policy outlines how personal data is handled securely and legally?",
+                "options": [
+                    {"letter": "A", "text": "First Aid Policy"},
+                    {"letter": "B", "text": "GDPR & Data Protection Policy"},
+                    {"letter": "C", "text": "Safeguarding Policy"},
+                    {"letter": "D", "text": "Disciplinary Policy"},
+                ],
+                "correct": "B",
+            },
+            {
+                "type": "single",
+                "text": "When should a first aid incident form be completed?",
+                "options": [
+                    {"letter": "A", "text": "Only for serious injuries"},
+                    {"letter": "B", "text": "At the end of the day"},
+                    {"letter": "C", "text": "Immediately after the incident"},
+                    {"letter": "D", "text": "Only if a manager requests it"},
+                ],
+                "correct": "C",
+            },
+            {
+                "type": "multiple",
+                "text": "Which of the following are part of your responsibilities under the Safeguarding Policy? (Select all that apply)",
+                "options": [
+                    {"letter": "A", "text": "Follow the S.A.P. protocol (Safeguard, Alert, Proceed)"},
+                    {"letter": "B", "text": "Wait for confirmation before reporting"},
+                    {"letter": "C", "text": "Maintain confidentiality"},
+                    {"letter": "D", "text": "Respond to signs of distress or disclosure"},
+                ],
+                "correct": ["A", "C", "D"],
+            },
+            {
+                "type": "multiple",
+                "text": "Which actions help ensure compliance with GDPR and Data Protection Policy? (Select all that apply)",
+                "options": [
+                    {"letter": "A", "text": "Store client files securely"},
+                    {"letter": "B", "text": "Use personal WhatsApp to update families"},
+                    {"letter": "C", "text": "Share data only with authorised team members"},
+                    {"letter": "D", "text": "Report any data breach immediately"},
+                ],
+                "correct": ["A", "C", "D"],
+            },
+            {
+                "type": "tf",
+                "text": "You are only required to follow the Safeguarding Policy if a child is visibly distressed.",
+                "correct": "F",
+            },
+            {
+                "type": "tf",
+                "text": "If a child discloses something concerning, you should remain calm, listen, and follow the reporting procedure.",
+                "correct": "T",
+            },
+            {
+                "type": "match",
+                "text": "Match the following.",
+                "pairs": [
+                    {
+                        "label": "Safeguarding Policy",
+                        "answer": "Protecting clients and reporting concerns",
+                    },
+                    {
+                        "label": "First Aid Policy",
+                        "answer": "Responding to injuries and medical needs",
+                    },
+                    {
+                        "label": "GDPR & Data Protection",
+                        "answer": "Handling personal information securely",
+                    },
+                    {
+                        "label": "Equipment & Uniform Policy",
+                        "answer": "Ensuring safe and professional use of resources",
+                    },
+                ],
+            },
+        ],
+    },
+}
+
+
+def main() -> None:
+    for key, mod in QUIZZES.items():
+        qs = mod["questions"]
+        if len(qs) != 8:
+            raise SystemExit(f"Module {key}: expected 8 questions, got {len(qs)}")
+        types = [q["type"] for q in qs]
+        expected = ["single", "single", "single", "multiple", "multiple", "tf", "tf", "match"]
+        if types != expected:
+            raise SystemExit(f"Module {key}: unexpected question types {types}")
+    OUT.write_text(json.dumps(QUIZZES, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"Wrote {OUT}")
+
+
+if __name__ == "__main__":
+    main()

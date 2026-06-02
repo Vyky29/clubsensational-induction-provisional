@@ -280,7 +280,7 @@ def render_module(mod: dict) -> str:
 
 
 def main() -> None:
-    subprocess.run([sys.executable, str(Path(__file__).parent / "patch_quizzes_four_matches.py")], check=True)
+    # Quiz pairs are defined exactly in induction_quizzes.json (no auto-patch).
     OUT_DASH.parent.mkdir(parents=True, exist_ok=True)
     OUT_DASH.write_text(render_dashboard(), encoding="utf-8")
     for mod in MODULES:

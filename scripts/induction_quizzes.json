@@ -4,144 +4,152 @@
     "questions": [
       {
         "type": "single",
-        "text": "What is one of the main aims of clubSENsational services?",
+        "text": "What year was clubSENsational originally founded?",
         "options": [
           {
             "letter": "A",
-            "text": "Competitive performance only"
+            "text": "2010"
           },
           {
             "letter": "B",
-            "text": "Supporting social communication, independence and wellbeing"
+            "text": "2015"
           },
           {
             "letter": "C",
-            "text": "Delivering unstructured activities without support"
+            "text": "2021"
+          },
+          {
+            "letter": "D",
+            "text": "2025"
           }
         ],
-        "correct": "B"
+        "correct": "C"
       },
       {
         "type": "single",
-        "text": "What best describes the clubSENsational approach?",
+        "text": "What is the main focus of clubSENsational’s mission?",
         "options": [
           {
             "letter": "A",
-            "text": "One fixed approach for every participant"
+            "text": "Academic improvement for children"
           },
           {
             "letter": "B",
-            "text": "A person centred and adaptable support model"
+            "text": "Financial literacy for neurodivergent adults"
           },
           {
             "letter": "C",
-            "text": "Support focused only on academic outcomes"
+            "text": "Empowering neurodivergent individuals through inclusive, tailored support"
+          },
+          {
+            "letter": "D",
+            "text": "Job placement services"
           }
         ],
-        "correct": "B"
+        "correct": "C"
       },
       {
         "type": "single",
-        "text": "Why is consistency important across services?",
+        "text": "Which of the following best describes “Executive Functioning Skills”?",
         "options": [
           {
             "letter": "A",
-            "text": "Because all participants respond identically"
+            "text": "Verbal articulation exercises"
           },
           {
             "letter": "B",
-            "text": "Because consistency helps support confidence, structure and participation"
+            "text": "Organising, planning, and managing tasks"
           },
           {
             "letter": "C",
-            "text": "Because routines should constantly change"
+            "text": "Emotional resilience"
+          },
+          {
+            "letter": "D",
+            "text": "Swimming coordination"
           }
         ],
         "correct": "B"
       },
       {
         "type": "multiple",
-        "text": "Which areas form part of the clubSENsational approach?",
+        "text": "Which of these are part of the three pillars of our mission? (Select all that apply)",
         "options": [
           {
             "letter": "A",
-            "text": "Physical wellbeing"
-          },
-          {
-            "letter": "B",
-            "text": "Emotional wellbeing"
-          },
-          {
-            "letter": "C",
             "text": "Social communication"
           },
           {
+            "letter": "B",
+            "text": "Physical and emotional wellbeing"
+          },
+          {
+            "letter": "C",
+            "text": "Behavioural control"
+          },
+          {
             "letter": "D",
-            "text": "Ignoring individual differences"
+            "text": "Independence"
           }
         ],
         "correct": [
           "A",
           "B",
-          "C"
+          "D"
         ]
       },
       {
         "type": "multiple",
-        "text": "Which environments may be used within clubSENsational services?",
+        "text": "What are some tools used to support clients’ communication at clubSENsational? (Select all that apply)",
         "options": [
           {
             "letter": "A",
-            "text": "Swimming pools"
+            "text": "PECS"
           },
           {
             "letter": "B",
-            "text": "Community environments"
+            "text": "Makaton"
           },
           {
             "letter": "C",
-            "text": "Physical activity spaces"
+            "text": "Picture books"
           },
           {
             "letter": "D",
-            "text": "Airports only"
+            "text": "Speech-generating devices"
           }
         ],
         "correct": [
           "A",
           "B",
-          "C"
+          "D"
         ]
       },
       {
         "type": "tf",
-        "text": "Every participant should receive identical support approaches regardless of individual needs.",
-        "correct": "F"
+        "text": "Visual tools like First-Then boards and social stories help reduce anxiety and support understanding.",
+        "correct": "T"
       },
       {
         "type": "tf",
-        "text": "Positive relationships and emotional safety influence participation and confidence.",
-        "correct": "T"
+        "text": "Every client at clubSENsational uses spoken language to communicate.",
+        "correct": "F"
       },
       {
         "type": "match",
         "text": "Match the following.",
         "pairs": [
           {
-            "label": "Mission",
-            "answer": "Meaningful participation"
+            "label": "Social Communication",
+            "answer": "Express needs and interact socially"
           },
           {
-            "label": "Person Centred Support",
-            "answer": "Individual adaptation"
+            "label": "Independence",
+            "answer": "Develop daily living skills"
           },
           {
-            "label": "Consistency",
-            "answer": "Predictability and structure"
-          },
-          {
-            "label": "Key Partners",
-            "answer": "Collaboration and shared resources"
+            "label": "Emotional Regulation",
+            "answer": "Recognise and manage feelings"
           }
         ]
       }
@@ -152,144 +160,156 @@
     "questions": [
       {
         "type": "single",
-        "text": "Why is teamwork important within clubSENsational?",
+        "text": "Who leads decision-making and strategic planning at clubSENsational?",
         "options": [
           {
             "letter": "A",
-            "text": "Because staff work independently without communication"
+            "text": "Admin Coordinators"
           },
           {
             "letter": "B",
-            "text": "Because teamwork supports safer and more organised services"
+            "text": "Team Leaders"
           },
           {
             "letter": "C",
-            "text": "Because departments should remain separate"
+            "text": "Management Team"
+          },
+          {
+            "letter": "D",
+            "text": "Venue Supervisor"
+          }
+        ],
+        "correct": "C"
+      },
+      {
+        "type": "single",
+        "text": "Which department manages rotas, schedules, and links families with staff?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Finance"
+          },
+          {
+            "letter": "B",
+            "text": "Admin"
+          },
+          {
+            "letter": "C",
+            "text": "HR"
+          },
+          {
+            "letter": "D",
+            "text": "Service Delivery Team"
           }
         ],
         "correct": "B"
       },
       {
         "type": "single",
-        "text": "What is one responsibility of operational systems?",
+        "text": "Who supports frontline staff and is the first point of contact on-site?",
         "options": [
           {
             "letter": "A",
-            "text": "Reducing communication between teams"
+            "text": "Service Manager"
           },
           {
             "letter": "B",
-            "text": "Supporting organisation and coordination"
+            "text": "Management Team"
           },
           {
             "letter": "C",
-            "text": "Removing safeguarding procedures"
-          }
-        ],
-        "correct": "B"
-      },
-      {
-        "type": "single",
-        "text": "Why are clear roles important across teams?",
-        "options": [
-          {
-            "letter": "A",
-            "text": "Because structure improves coordination and accountability"
+            "text": "HR"
           },
           {
-            "letter": "B",
-            "text": "Because staff should complete every role alone"
-          },
-          {
-            "letter": "C",
-            "text": "Because departments never collaborate"
+            "letter": "D",
+            "text": "Admin"
           }
         ],
         "correct": "A"
       },
       {
         "type": "multiple",
-        "text": "Which areas may form part of organisational operations?",
+        "text": "Which teams are part of the Service Delivery group?",
         "options": [
           {
             "letter": "A",
-            "text": "Service delivery"
+            "text": "Swimming Instructors"
           },
           {
             "letter": "B",
-            "text": "Administration"
+            "text": "Climbing Instructors"
           },
           {
             "letter": "C",
-            "text": "Safeguarding"
+            "text": "Admin Team"
           },
           {
             "letter": "D",
-            "text": "Ignoring communication"
+            "text": "Support Worker"
           }
         ],
         "correct": [
           "A",
           "B",
-          "C"
+          "D"
         ]
       },
       {
         "type": "multiple",
-        "text": "What helps maintain effective teamwork?",
+        "text": "What are the responsibilities of Swimming Instructors at clubSENsational? (Select all that apply)",
         "options": [
           {
             "letter": "A",
-            "text": "Communication"
+            "text": "Build aquatic confidence"
           },
           {
             "letter": "B",
-            "text": "Shared responsibility"
+            "text": "Lead adapted swimming sessions"
           },
           {
             "letter": "C",
-            "text": "Respectful collaboration"
+            "text": "Write venue maintenance reports"
           },
           {
             "letter": "D",
-            "text": "Avoiding coordination"
+            "text": "Make water relaxing and enjoyable"
           }
         ],
         "correct": [
           "A",
           "B",
-          "C"
+          "D"
         ]
       },
       {
         "type": "tf",
-        "text": "Communication across teams supports participant continuity and organisation.",
+        "text": "Admins play a key role in coordinating schedules and sharing updates.",
         "correct": "T"
       },
       {
         "type": "tf",
-        "text": "Operational systems are unrelated to service quality.",
-        "correct": "F"
+        "text": "Finance is responsible for reporting, payments, and service cost tracking.",
+        "correct": "T"
       },
       {
         "type": "match",
         "text": "Match the following.",
         "pairs": [
           {
-            "label": "Leadership",
-            "answer": "Organisational guidance"
+            "label": "Support Workers",
+            "answer": "Structured routines and participation"
           },
           {
-            "label": "Operations",
-            "answer": "Coordination and systems"
+            "label": "Climbing Instructors",
+            "answer": "Confidence and motor planning"
           },
           {
-            "label": "Service Delivery",
-            "answer": "Participant support"
+            "label": "Swimming Instructors",
+            "answer": "Aquatic safety and enjoyment"
           },
           {
-            "label": "Teamwork",
-            "answer": "Shared responsibility across departments"
+            "label": "Fitness Instructors",
+            "answer": "Movement and self-esteem"
           }
         ]
       }
@@ -300,107 +320,119 @@
     "questions": [
       {
         "type": "single",
-        "text": "Why do different environments require adaptable support?",
+        "text": "Which of these services is designed for highly individualised support, outside group settings?",
         "options": [
           {
             "letter": "A",
-            "text": "Because all environments feel identical"
+            "text": "Consulting & Training"
           },
           {
             "letter": "B",
-            "text": "Because environments influence participation and regulation differently"
+            "text": "Be-Spoke Programmes"
           },
           {
             "letter": "C",
-            "text": "Because routines should always be removed"
-          }
-        ],
-        "correct": "B"
-      },
-      {
-        "type": "single",
-        "text": "What helps support successful transitions between venues?",
-        "options": [
-          {
-            "letter": "A",
-            "text": "Increased unpredictability"
-          },
-          {
-            "letter": "B",
-            "text": "Preparation and structure"
-          },
-          {
-            "letter": "C",
-            "text": "Removing communication supports"
-          }
-        ],
-        "correct": "B"
-      },
-      {
-        "type": "single",
-        "text": "Why is consistency important across services?",
-        "options": [
-          {
-            "letter": "A",
-            "text": "Because participants benefit from familiar systems and support"
-          },
-          {
-            "letter": "B",
-            "text": "Because all venues operate identically"
-          },
-          {
-            "letter": "C",
-            "text": "Because flexibility should never happen"
-          }
-        ],
-        "correct": "A"
-      },
-      {
-        "type": "multiple",
-        "text": "Which environments may form part of services?",
-        "options": [
-          {
-            "letter": "A",
-            "text": "Aquatic environments"
-          },
-          {
-            "letter": "B",
-            "text": "Physical activity spaces"
-          },
-          {
-            "letter": "C",
-            "text": "Community settings"
+            "text": "Climbing"
           },
           {
             "letter": "D",
-            "text": "Random unsafe environments"
+            "text": "Swimming"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "type": "single",
+        "text": "Which service is specifically designed for families who prefer online emotional support?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Be-Spoke"
+          },
+          {
+            "letter": "B",
+            "text": "Counselling"
+          },
+          {
+            "letter": "C",
+            "text": "FitFun"
+          },
+          {
+            "letter": "D",
+            "text": "Crash Courses & Camps"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "type": "single",
+        "text": "What type of sessions are typically offered during school holidays?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Splash & Connect"
+          },
+          {
+            "letter": "B",
+            "text": "Crash Courses & Camps"
+          },
+          {
+            "letter": "C",
+            "text": "Counselling"
+          },
+          {
+            "letter": "D",
+            "text": "Fitness"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "type": "multiple",
+        "text": "What are some of the key goals of FitFun sessions? (Select all that apply)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Multi-sports activities"
+          },
+          {
+            "letter": "B",
+            "text": "Play-based movement"
+          },
+          {
+            "letter": "C",
+            "text": "Literacy development"
+          },
+          {
+            "letter": "D",
+            "text": "Sensory regulation"
           }
         ],
         "correct": [
           "A",
           "B",
-          "C"
+          "D"
         ]
       },
       {
         "type": "multiple",
-        "text": "What may influence participation within environments?",
+        "text": "Where is swimming delivered? (Select all that apply)",
         "options": [
           {
             "letter": "A",
-            "text": "Sensory input"
+            "text": "Acton Centre"
           },
           {
             "letter": "B",
-            "text": "Noise levels"
+            "text": "Northolt Centre"
           },
           {
             "letter": "C",
-            "text": "Predictability"
+            "text": "SwimFarm"
           },
           {
             "letter": "D",
-            "text": "Completely unrelated factors only"
+            "text": "clubSENsational Hub"
           }
         ],
         "correct": [
@@ -411,33 +443,33 @@
       },
       {
         "type": "tf",
-        "text": "Support approaches may need adapting across different venues.",
-        "correct": "T"
+        "text": "Be-Spoke sessions are delivered in large group formats only.",
+        "correct": "F"
       },
       {
         "type": "tf",
-        "text": "Emotional safety and structure remain important across all environments.",
-        "correct": "T"
+        "text": "All venues used by clubSENsational are public leisure centres.",
+        "correct": "F"
       },
       {
         "type": "match",
         "text": "Match the following.",
         "pairs": [
           {
-            "label": "Aquatic Environment",
-            "answer": "Water based support"
+            "label": "Swimming",
+            "answer": "Promotes regulation and aquatic confidence"
           },
           {
-            "label": "Community Environment",
-            "answer": "Real world participation"
+            "label": "Climbing",
+            "answer": "Builds focus, motor planning and body control"
           },
           {
-            "label": "Structure",
-            "answer": "Predictability and organisation"
+            "label": "FitFun",
+            "answer": "Movement-based play and self-esteem"
           },
           {
-            "label": "Adaptation",
-            "answer": "Flexible support across venues"
+            "label": "Splash & Connect",
+            "answer": "Social engagement and sensory water play"
           }
         ]
       }
@@ -448,112 +480,92 @@
     "questions": [
       {
         "type": "single",
-        "text": "Why is person centred support important?",
+        "text": "What is the first priority when starting to work with a new client?",
         "options": [
           {
             "letter": "A",
-            "text": "Because all participants follow identical pathways"
+            "text": "Helping them complete academic tasks"
           },
           {
             "letter": "B",
-            "text": "Because individuals require different support approaches"
+            "text": "Establishing structure and feeling safe"
           },
           {
             "letter": "C",
-            "text": "Because adaptation reduces professionalism"
+            "text": "Introducing them to every team member"
+          },
+          {
+            "letter": "D",
+            "text": "Asking them to set their own goals"
           }
         ],
         "correct": "B"
       },
       {
         "type": "single",
-        "text": "What may influence regulation and participation?",
+        "text": "Which area is part of clubSENsational’s core skill development focus?",
         "options": [
           {
             "letter": "A",
-            "text": "Sensory experiences"
+            "text": "Reading fluency"
           },
           {
             "letter": "B",
-            "text": "Environmental demands"
+            "text": "Formal testing"
           },
           {
             "letter": "C",
-            "text": "Emotional safety"
+            "text": "Emotional and physical regulation"
           },
           {
             "letter": "D",
-            "text": "All of the above"
+            "text": "Fine motor writing"
           }
         ],
-        "correct": "D"
+        "correct": "C"
       },
       {
         "type": "single",
-        "text": "Why are visual systems valuable?",
+        "text": "What is the purpose of using AAC tools or visuals in a session?",
         "options": [
           {
             "letter": "A",
-            "text": "They increase unpredictability"
+            "text": "To replace staff-led interaction"
           },
           {
             "letter": "B",
-            "text": "They support communication and understanding"
+            "text": "To support understanding and expression"
           },
           {
             "letter": "C",
-            "text": "They replace all interaction permanently"
+            "text": "To allow the client to leave early"
+          },
+          {
+            "letter": "D",
+            "text": "To avoid verbal communication"
           }
         ],
         "correct": "B"
       },
       {
         "type": "multiple",
-        "text": "Which areas may influence participant experience?",
+        "text": "Which strategies help build trust and engagement with clients? (Select all that apply)",
         "options": [
           {
             "letter": "A",
-            "text": "Communication"
+            "text": "Offering structure and visual cues"
           },
           {
             "letter": "B",
-            "text": "Sensory processing"
+            "text": "Following the client’s lead"
           },
           {
             "letter": "C",
-            "text": "Emotional wellbeing"
+            "text": "Creating a calm and predictable space"
           },
           {
             "letter": "D",
-            "text": "Structure and predictability"
-          }
-        ],
-        "correct": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ]
-      },
-      {
-        "type": "multiple",
-        "text": "What helps build confidence over time?",
-        "options": [
-          {
-            "letter": "A",
-            "text": "Positive experiences"
-          },
-          {
-            "letter": "B",
-            "text": "Emotional safety"
-          },
-          {
-            "letter": "C",
-            "text": "Supportive relationships"
-          },
-          {
-            "letter": "D",
-            "text": "Overwhelming environments"
+            "text": "Rushing through activities"
           }
         ],
         "correct": [
@@ -563,34 +575,61 @@
         ]
       },
       {
-        "type": "tf",
-        "text": "Behaviour should always be understood within context.",
-        "correct": "T"
+        "type": "multiple",
+        "text": "What are signs that a client may be dysregulated? (Select all that apply)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Emotional outbursts"
+          },
+          {
+            "letter": "B",
+            "text": "Avoidance or shutdown"
+          },
+          {
+            "letter": "C",
+            "text": "Calm and focused behaviour"
+          },
+          {
+            "letter": "D",
+            "text": "Increased noise sensitivity"
+          }
+        ],
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
       },
       {
         "type": "tf",
-        "text": "Meaningful progress looks identical for every participant.",
+        "text": "All clients must follow the same structure and activities regardless of their profile.",
         "correct": "F"
+      },
+      {
+        "type": "tf",
+        "text": "Engaging through play can support emotional regulation and communication development.",
+        "correct": "T"
       },
       {
         "type": "match",
         "text": "Match the following.",
         "pairs": [
           {
-            "label": "Visual Supports",
-            "answer": "Communication and predictability"
+            "label": "Visual Schedules",
+            "answer": "Support understanding of routines"
           },
           {
-            "label": "Co Regulation",
-            "answer": "Emotional support"
+            "label": "Sensory Regulation",
+            "answer": "Help manage emotional and physical states"
           },
           {
-            "label": "Meaningful Participation",
-            "answer": "Individual progress and engagement"
+            "label": "Following the Client’s Lead",
+            "answer": "Build trust and meaningful engagement"
           },
           {
-            "label": "Person Centred Approach",
-            "answer": "Adapting support to the individual"
+            "label": "AAC Tools",
+            "answer": "Allow alternative ways to communicate"
           }
         ]
       }
@@ -601,124 +640,135 @@
     "questions": [
       {
         "type": "single",
-        "text": "Why is professionalism important within services?",
+        "text": "What is the first step to ensure a safe and prepared environment before a session begins?",
         "options": [
           {
             "letter": "A",
-            "text": "Because professionalism only matters during meetings"
+            "text": "Wait until the client arrives"
           },
           {
             "letter": "B",
-            "text": "Because staff behaviour influences participant experiences"
+            "text": "Ask admin for instructions"
           },
           {
             "letter": "C",
-            "text": "Because professionalism is unrelated to safety"
+            "text": "Check equipment and the environment"
+          },
+          {
+            "letter": "D",
+            "text": "Begin the activity immediately"
+          }
+        ],
+        "correct": "C"
+      },
+      {
+        "type": "single",
+        "text": "Which of the following reflects appropriate communication with colleagues?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Avoid giving feedback"
+          },
+          {
+            "letter": "B",
+            "text": "Use respectful, solution-focused language"
+          },
+          {
+            "letter": "C",
+            "text": "Always escalate everything to the manager"
+          },
+          {
+            "letter": "D",
+            "text": "Communicate only during sessions"
           }
         ],
         "correct": "B"
       },
       {
         "type": "single",
-        "text": "Why is preparation important before sessions?",
+        "text": "When representing clubSENsational at a venue, you should:",
         "options": [
           {
             "letter": "A",
-            "text": "Because preparation supports safer and more organised delivery"
+            "text": "Only follow your own professional instincts"
           },
           {
             "letter": "B",
-            "text": "Because environments organise themselves automatically"
+            "text": "Act independently of company policy"
           },
           {
             "letter": "C",
-            "text": "Because visuals are unnecessary"
-          }
-        ],
-        "correct": "A"
-      },
-      {
-        "type": "single",
-        "text": "Why is teamwork important during service delivery?",
-        "options": [
-          {
-            "letter": "A",
-            "text": "Because teamwork improves support and organisation"
-          },
-          {
-            "letter": "B",
-            "text": "Because staff should work independently"
-          },
-          {
-            "letter": "C",
-            "text": "Because communication reduces flexibility"
-          }
-        ],
-        "correct": "A"
-      },
-      {
-        "type": "multiple",
-        "text": "Which areas form part of professional practice?",
-        "options": [
-          {
-            "letter": "A",
-            "text": "Communication"
-          },
-          {
-            "letter": "B",
-            "text": "Preparation"
-          },
-          {
-            "letter": "C",
-            "text": "Accountability"
+            "text": "Represent the organisation’s values and expectations"
           },
           {
             "letter": "D",
-            "text": "Respectful interaction"
+            "text": "Speak only if spoken to"
+          }
+        ],
+        "correct": "C"
+      },
+      {
+        "type": "multiple",
+        "text": "What does “Professionalism” mean at clubSENsational? (Select all that apply)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Being on time and well-prepared"
+          },
+          {
+            "letter": "B",
+            "text": "Using personal phones during sessions"
+          },
+          {
+            "letter": "C",
+            "text": "Following agreed communication protocols"
+          },
+          {
+            "letter": "D",
+            "text": "Upholding safety and behaviour standards"
           }
         ],
         "correct": [
           "A",
-          "B",
           "C",
           "D"
         ]
       },
       {
         "type": "multiple",
-        "text": "What may help support effective session delivery?",
+        "text": "What are your duties regarding session delivery? (Select all that apply)",
         "options": [
           {
             "letter": "A",
-            "text": "Structure"
+            "text": "Adapt activities to individual profiles"
           },
           {
             "letter": "B",
-            "text": "Adaptability"
+            "text": "Lead sessions independently with no planning"
           },
           {
             "letter": "C",
-            "text": "Organisation"
+            "text": "Deliver sessions in line with club structure"
           },
           {
             "letter": "D",
-            "text": "Ignoring participant needs"
+            "text": "Ensure engagement and safety"
           }
         ],
         "correct": [
           "A",
-          "B",
-          "C"
+          "C",
+          "D"
         ]
       },
       {
         "type": "tf",
-        "text": "Professional standards should remain consistent across venues.",
+        "text": "You are responsible for flagging any safeguarding concerns, even if they seem minor.",
         "correct": "T"
       },
       {
         "type": "tf",
-        "text": "Staff behaviour can influence participant confidence and wellbeing.",
+        "text": "Using the agreed communication channels helps ensure consistency and professionalism across the team.",
         "correct": "T"
       },
       {
@@ -726,20 +776,20 @@
         "text": "Match the following.",
         "pairs": [
           {
-            "label": "Preparation",
-            "answer": "Organised session delivery"
+            "label": "Check environment",
+            "answer": "Safety and preparation"
           },
           {
-            "label": "Accountability",
-            "answer": "Professional responsibility"
+            "label": "Use respectful language",
+            "answer": "Communication and teamwork"
           },
           {
-            "label": "Teamwork",
-            "answer": "Shared participant support"
+            "label": "Follow structure and adapt",
+            "answer": "Session delivery"
           },
           {
-            "label": "Professionalism",
-            "answer": "Representing clubSENsational with care"
+            "label": "Wear uniform appropriately",
+            "answer": "Professional image"
           }
         ]
       }
@@ -750,123 +800,135 @@
     "questions": [
       {
         "type": "single",
-        "text": "Why is safeguarding everyone's responsibility?",
+        "text": "What is the correct first step if you witness or suspect a safeguarding concern?",
         "options": [
           {
             "letter": "A",
-            "text": "Because only leadership teams manage participant safety"
+            "text": "Wait to see if it happens again"
           },
           {
             "letter": "B",
-            "text": "Because all staff contribute towards safe environments"
+            "text": "Discuss it in the group chat"
           },
           {
             "letter": "C",
-            "text": "Because safeguarding only applies during incidents"
+            "text": "Report it to the Safeguarding Lead immediately"
+          },
+          {
+            "letter": "D",
+            "text": "Tell the client to speak up"
+          }
+        ],
+        "correct": "C"
+      },
+      {
+        "type": "single",
+        "text": "Which policy outlines how personal data is handled securely and legally?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "First Aid Policy"
+          },
+          {
+            "letter": "B",
+            "text": "GDPR & Data Protection Policy"
+          },
+          {
+            "letter": "C",
+            "text": "Safeguarding Policy"
+          },
+          {
+            "letter": "D",
+            "text": "Disciplinary Policy"
           }
         ],
         "correct": "B"
       },
       {
         "type": "single",
-        "text": "Why is accurate reporting important?",
+        "text": "When should a first aid incident form be completed?",
         "options": [
           {
             "letter": "A",
-            "text": "Because concerns should only be discussed verbally"
+            "text": "Only for serious injuries"
           },
           {
             "letter": "B",
-            "text": "Because reporting supports safety and accountability"
+            "text": "At the end of the day"
           },
           {
             "letter": "C",
-            "text": "Because procedures are unrelated to participant wellbeing"
-          }
-        ],
-        "correct": "B"
-      },
-      {
-        "type": "single",
-        "text": "Why are professional boundaries important?",
-        "options": [
-          {
-            "letter": "A",
-            "text": "Because boundaries help maintain safe and appropriate relationships"
-          },
-          {
-            "letter": "B",
-            "text": "Because professionalism only matters during sessions"
-          },
-          {
-            "letter": "C",
-            "text": "Because boundaries reduce emotional safety"
-          }
-        ],
-        "correct": "A"
-      },
-      {
-        "type": "multiple",
-        "text": "Which areas form part of safeguarding responsibilities?",
-        "options": [
-          {
-            "letter": "A",
-            "text": "Supervision"
-          },
-          {
-            "letter": "B",
-            "text": "Reporting concerns"
-          },
-          {
-            "letter": "C",
-            "text": "Emotional safety"
+            "text": "Immediately after the incident"
           },
           {
             "letter": "D",
-            "text": "Ignoring environmental risks"
+            "text": "Only if a manager requests it"
+          }
+        ],
+        "correct": "C"
+      },
+      {
+        "type": "multiple",
+        "text": "Which of the following are part of your responsibilities under the Safeguarding Policy? (Select all that apply)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Follow the S.A.P. protocol (Safeguard, Alert, Proceed)"
+          },
+          {
+            "letter": "B",
+            "text": "Wait for confirmation before reporting"
+          },
+          {
+            "letter": "C",
+            "text": "Maintain confidentiality"
+          },
+          {
+            "letter": "D",
+            "text": "Respond to signs of distress or disclosure"
           }
         ],
         "correct": [
           "A",
-          "B",
-          "C"
+          "C",
+          "D"
         ]
       },
       {
         "type": "multiple",
-        "text": "Which systems support safer organisational practice?",
+        "text": "Which actions help ensure compliance with GDPR and Data Protection Policy? (Select all that apply)",
         "options": [
           {
             "letter": "A",
-            "text": "Reporting systems"
+            "text": "Store client files securely"
           },
           {
             "letter": "B",
-            "text": "Safeguarding procedures"
+            "text": "Use personal WhatsApp to update families"
           },
           {
             "letter": "C",
-            "text": "Staff portal systems"
+            "text": "Share data only with authorised team members"
           },
           {
             "letter": "D",
-            "text": "Informal undocumented communication only"
+            "text": "Report any data breach immediately"
           }
         ],
         "correct": [
           "A",
-          "B",
-          "C"
+          "C",
+          "D"
         ]
       },
       {
         "type": "tf",
-        "text": "Confidential information should only be shared appropriately and securely.",
-        "correct": "T"
+        "text": "You are only required to follow the Safeguarding Policy if a child is visibly distressed.",
+        "correct": "F"
       },
       {
         "type": "tf",
-        "text": "Policies and procedures should remain connected to real practice.",
+        "text": "If a child discloses something concerning, you should remain calm, listen, and follow the reporting procedure.",
         "correct": "T"
       },
       {
@@ -874,20 +936,20 @@
         "text": "Match the following.",
         "pairs": [
           {
-            "label": "Safeguarding",
-            "answer": "Participant protection"
+            "label": "Safeguarding Policy",
+            "answer": "Protecting clients and reporting concerns"
           },
           {
-            "label": "Confidentiality",
-            "answer": "Respectful information handling"
+            "label": "First Aid Policy",
+            "answer": "Responding to injuries and medical needs"
           },
           {
-            "label": "Incident Reporting",
-            "answer": "Organisational accountability"
+            "label": "GDPR & Data Protection",
+            "answer": "Handling personal information securely"
           },
           {
-            "label": "Data Protection",
-            "answer": "Secure and appropriate information use"
+            "label": "Equipment & Uniform Policy",
+            "answer": "Ensuring safe and professional use of resources"
           }
         ]
       }
