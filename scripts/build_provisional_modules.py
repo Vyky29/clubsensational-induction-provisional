@@ -131,7 +131,7 @@ def provisional_descriptor(mod: dict) -> str:
 
 def outcomes_section_html(mod: dict) -> str:
     items = "\n".join(
-        f"""            <div class="outcome clickable-progress" data-outcome-item="{i}">
+        f"""            <div class="outcome clickable-progress" data-outcome-item="{i}" role="button" tabindex="0" aria-pressed="false">
               <span class="outcome-index" aria-hidden="true"></span>
               <div>{text}</div>
             </div>"""

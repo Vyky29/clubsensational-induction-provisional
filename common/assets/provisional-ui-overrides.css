@@ -241,3 +241,18 @@
 .portal #outcomes .section-title-row h3 {
   color: #0f2840 !important;
 }
+
+.portal #outcomes.is-unlocked .outcomes,
+.portal #outcomes.is-unlocked .outcome {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+.portal #outcomes.is-unlocked .outcome {
+  user-select: none;
+}
+
+.portal #outcomes.is-unlocked .outcome:focus-visible {
+  outline: 2px solid #f0b323;
+  outline-offset: 2px;
+}

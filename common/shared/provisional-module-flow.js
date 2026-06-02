@@ -67,6 +67,12 @@
     return state;
   }
 
+  var refreshOutcomesUi = null;
+
+  function afterUnlockRefresh() {
+    if (refreshOutcomesUi) refreshOutcomesUi();
+  }
+
   function applyUnlocks(state) {
     if (isStageDone('journey', state)) {
       unlockStage('outcomes');
@@ -90,20 +96,23 @@
     if (state.quizPass) {
       unlockStage('quiz');
     }
+    afterUnlockRefresh();
   }
 
   function initOutcomes() {
     var outcomesSection = document.getElementById('outcomes');
     if (!outcomesSection) return;
 
-    var items = outcomesSection.querySelectorAll('[data-outcome-item]');
     var outcomesCheck = document.getElementById('outcomesCheck');
     var helper = document.getElementById('outcomesHelper');
-    var total = items.length;
+
+    function getOutcomeItems() {
+      return outcomesSection.querySelectorAll('[data-outcome-item]');
+    }
 
     function reviewedCount() {
       var n = 0;
-      items.forEach(function (item) {
+      getOutcomeItems().forEach(function (item) {
         if (item.classList.contains('clicked')) n++;
       });
       return n;
@@ -111,9 +120,10 @@
 
     function updateOutcomesHelper() {
       if (!helper) return;
+      var total = getOutcomeItems().length;
       var done = reviewedCount();
-      var journeyDone = isStageDone('journey', loadState());
-      if (!journeyDone) {
+      var unlocked = outcomesSection.classList.contains('is-unlocked');
+      if (!unlocked) {
         helper.textContent =
           'Complete the Induction Journey section to unlock Learning Outcomes.';
         return;
@@ -133,33 +143,53 @@
 
     function updateOutcomesCheck() {
       if (!outcomesCheck) return;
-      var journeyDone = isStageDone('journey', loadState());
-      var allReviewed = reviewedCount() >= total;
-      outcomesCheck.disabled = !journeyDone || !allReviewed;
-      if (!journeyDone) {
+      var unlocked = outcomesSection.classList.contains('is-unlocked');
+      var total = getOutcomeItems().length;
+      var allReviewed = total > 0 && reviewedCount() >= total;
+      outcomesCheck.disabled = !unlocked || !allReviewed;
+      if (!unlocked) {
         outcomesCheck.checked = false;
       }
     }
 
-    items.forEach(function (item) {
-      item.addEventListener('click', function () {
-        if (!isStageDone('journey', loadState())) return;
+    refreshOutcomesUi = function () {
+      updateOutcomesHelper();
+      updateOutcomesCheck();
+    };
+
+    if (!outcomesSection.dataset.outcomesBound) {
+      outcomesSection.dataset.outcomesBound = '1';
+
+      function toggleOutcomeItem(item) {
+        if (!item || !outcomesSection.classList.contains('is-unlocked')) return;
         item.classList.toggle('clicked');
-        updateOutcomesHelper();
-        updateOutcomesCheck();
-      });
-    });
+        item.setAttribute('aria-pressed', item.classList.contains('clicked') ? 'true' : 'false');
+        refreshOutcomesUi();
+      }
 
-    document.querySelectorAll('[data-stage-check="outcomes"]').forEach(function (input) {
-      input.addEventListener('change', function () {
-        var state = loadState();
-        applyUnlocks(state);
-        refreshProgress();
+      outcomesSection.addEventListener('click', function (e) {
+        toggleOutcomeItem(e.target.closest('[data-outcome-item]'));
       });
-    });
 
-    updateOutcomesHelper();
-    updateOutcomesCheck();
+      outcomesSection.addEventListener('keydown', function (e) {
+        if (e.key !== 'Enter' && e.key !== ' ') return;
+        var item = e.target.closest('[data-outcome-item]');
+        if (!item) return;
+        e.preventDefault();
+        toggleOutcomeItem(item);
+      });
+
+      document.querySelectorAll('[data-stage-check="outcomes"]').forEach(function (input) {
+        input.addEventListener('change', function () {
+          var state = loadState();
+          applyUnlocks(state);
+          refreshProgress();
+          if (refreshOutcomesUi) refreshOutcomesUi();
+        });
+      });
+    }
+
+    refreshOutcomesUi();
   }
 
   document.querySelectorAll('[data-stage-check="journey"]').forEach(function (input) {
@@ -167,7 +197,7 @@
       var state = loadState();
       applyUnlocks(state);
       refreshProgress();
-      initOutcomes();
+      afterUnlockRefresh();
     });
   });
 
