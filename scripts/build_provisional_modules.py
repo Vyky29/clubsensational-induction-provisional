@@ -106,8 +106,8 @@ def render_dashboard() -> str:
 
 def provisional_descriptor(mod: dict) -> str:
     return (
-        f"Review your place on the induction pathway, watch the module video, "
-        f"then pass the quiz to continue. {mod['subtitle']}"
+        "Review your place on the induction pathway, watch the module video, "
+        "then pass the quiz to continue."
     )
 
 
