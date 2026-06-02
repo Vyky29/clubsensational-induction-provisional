@@ -1,5 +1,5 @@
 /**
- * Provisional induction — hub parity, module hero, crisp video, gated sections.
+ * Provisional induction  hub parity, module hero, crisp video, gated sections.
  */
 
 /* ----- Dashboard: match full induction / swimming pathway hub ----- */
@@ -130,4 +130,23 @@
 
 .portal .module-progress-top span#moduleProgressText {
   font-weight: 700;
+}
+
+/* ----- Quiz: module-completion-flow hides .quiz-embed until .quiz-visible ----- */
+.portal #quiz.is-unlocked .quiz-embed,
+.portal #quiz.quiz-visible .quiz-embed {
+  display: block !important;
+}
+
+.portal #quiz.is-unlocked .quiz-inline,
+.portal #quiz.quiz-visible .quiz-inline {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.portal #quiz.is-unlocked .section-body,
+.portal #quiz.is-unlocked .section-body > * {
+  opacity: 1 !important;
+  pointer-events: auto !important;
 }

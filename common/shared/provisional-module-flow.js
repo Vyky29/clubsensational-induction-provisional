@@ -33,6 +33,9 @@
     if (!el) return;
     el.classList.remove('gated-locked');
     el.classList.add('is-unlocked');
+    if (id === 'quiz') {
+      el.classList.add('quiz-visible');
+    }
     var banner = el.querySelector('.section-lock-banner');
     if (banner) banner.style.display = 'none';
   }
@@ -125,11 +128,20 @@
       }
       e.preventDefault();
       unlockStage('quiz');
+      unlockStage('complete');
       location.hash = 'quiz';
       var quiz = section('quiz');
       if (quiz) quiz.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
+
+  if (location.hash === '#quiz') {
+    var st = loadState();
+    if (st.video) {
+      unlockStage('complete');
+      unlockStage('quiz');
+    }
+  }
 
   document.querySelectorAll('[data-scroll]').forEach(function (btn) {
     btn.addEventListener('click', function () {

@@ -412,7 +412,8 @@
   display:none;
 }
 
-#quiz.quiz-visible .quiz-embed{
+#quiz.quiz-visible .quiz-embed,
+.portal[data-provisional-induction] #quiz.is-unlocked .quiz-embed{
   display:block;
 }
 
