@@ -286,7 +286,7 @@ def render_module(mod: dict) -> str:
           <p class="lead">Watch the full video from start to finish before the quiz. You cannot skip ahead using the video timeline.</p>
           <div class="module-video-shell">
             <video class="module-video" id="moduleVideo" controls playsinline preload="metadata" controlsList="nodownload" data-video-no-seek="1" src="/assets/videos/module-{n}.mp4"></video>
-            <p class="module-video-status" id="moduleVideoStatus">Video not completed yet.</p>
+            <p class="module-video-status" id="moduleVideoStatus">Watched 0%</p>
           </div>
           <label class="check-item clickable-progress video-complete-check" id="videoCompleteWrap" hidden>
             <input type="checkbox" class="overall-check" data-stage-check="video" id="videoCompleteCheck" disabled>

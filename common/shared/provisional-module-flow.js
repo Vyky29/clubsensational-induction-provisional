@@ -179,14 +179,10 @@
 
   function formatWatchProgress() {
     if (!video || !video.duration || !isFinite(video.duration)) {
-      return 'Play the video from the start. You cannot skip ahead using the timeline.';
+      return 'Watched 0%';
     }
     var pct = Math.min(100, Math.round((maxWatchedTime / video.duration) * 100));
-    return (
-      'Watched ' +
-      pct +
-      '%. You must watch the full video before the quiz - the timeline cannot be used to skip ahead.'
-    );
+    return 'Watched ' + pct + '%';
   }
 
   function persistMaxWatched(state) {
@@ -275,8 +271,7 @@
       if (video.duration && maxWatchedTime < video.duration - SEEK_TOLERANCE) {
         clampForwardSeek();
         if (statusEl) {
-          statusEl.textContent =
-            'Please watch the full video without skipping. The quiz unlocks when the video finishes.';
+          statusEl.textContent = formatWatchProgress();
         }
         return;
       }
