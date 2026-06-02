@@ -1,0 +1,5 @@
+{
+  "cleanUrls": false,
+  "buildCommand": "python3 build_provisional.py",
+  "outputDirectory": "dist"
+}

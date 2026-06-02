@@ -1,0 +1,209 @@
+{
+  "pathway_title": "clubSENsational General Induction",
+  "modules": [
+    {
+      "number": 1,
+      "title": "Welcome to clubSENsational",
+      "subtitle": "Who we are, our purpose and what makes clubSENsational distinctive.",
+      "descriptor": "Start with our story, mission, impact and partners before you open the teaching blocks.",
+      "intro": "Begin your induction with an overview of our organisation, values and the standards that guide everything we do.",
+      "points": [
+        "Our brief story and founding context",
+        "Our mission in practice",
+        "The difference we make",
+        "Key partners and suppliers"
+      ],
+      "outcomes": [
+        "What clubSENsational stands for and why we exist",
+        "How our mission guides everyday decisions",
+        "The difference we make for clients and communities",
+        "Who our key partners and suppliers are"
+      ],
+      "blocks": [
+        { "title": "Our Story & Growth", "hint": "How clubSENsational began, grew, and why consistency and trust matter." },
+        { "title": "Our Mission & Approach", "hint": "Communication, independence, wellbeing, and why structure matters in practice." },
+        { "title": "The Difference We Make", "hint": "Meaningful participation, positive experiences, families, and long term impact." },
+        { "title": "Key Partners & Suppliers", "hint": "Collaboration, venues, resources, and consistency across services." }
+      ],
+      "recap_intro": "A quick recap of what defines clubSENsational and how our mission shapes everyday practice.",
+      "recap_ideas": [
+        { "title": "Our values shape every interaction", "text": "How we show up influences trust, safety and belonging for every participant." },
+        { "title": "Mission guides daily decisions", "text": "Purpose turns into practice through consistent choices in sessions and support." },
+        { "title": "Structure builds reliable experiences", "text": "Predictable routines help participants engage with confidence." },
+        { "title": "Impact extends beyond the session", "text": "Positive participation supports families, confidence and long term wellbeing." },
+        { "title": "Partners strengthen our delivery", "text": "Collaboration across venues and suppliers keeps provision consistent." },
+        { "title": "Professional standards protect everyone", "text": "Shared expectations help staff represent clubSENsational with care." }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Team & Departments",
+      "subtitle": "How we are organised and who does what across the organisation.",
+      "descriptor": "Understand structure, leadership and how teams connect before you open the blocks.",
+      "intro": "Understand our structure, key departments and how teams work together to deliver consistent provision.",
+      "points": [
+        "Management team and leadership",
+        "Core operational departments",
+        "Service delivery teams",
+        "Working together across the organisation"
+      ],
+      "outcomes": [
+        "Who leads the organisation and how decisions flow",
+        "What core operational departments do",
+        "How service delivery teams fit together",
+        "Who to contact for support in each area"
+      ],
+      "blocks": [
+        { "title": "Management Team & Leadership", "hint": "Leadership, safeguarding, recruitment, and maintaining quality across services." },
+        { "title": "Core Operational Departments", "hint": "Administration, finance, human resources, and operational systems behind service delivery." },
+        { "title": "Service Delivery Teams", "hint": "Instructors, positive experiences, adapting support, and collaboration across services." },
+        { "title": "Working Together Across the Organisation", "hint": "Shared purpose, communication, consistency across venues, and collaboration for better outcomes." }
+      ],
+      "recap_intro": "A quick recap of how teams connect across clubSENsational and who to turn to for support.",
+      "recap_ideas": [
+        { "title": "Clear structure supports accountability", "text": "Knowing roles and reporting lines helps decisions move quickly and safely." },
+        { "title": "Leadership sets organisational tone", "text": "Management expectations influence quality, safeguarding and culture." },
+        { "title": "Operations enable reliable delivery", "text": "Administration, finance and HR systems keep services running smoothly." },
+        { "title": "Service teams shape participant experience", "text": "Frontline staff turn policy and planning into daily practice." },
+        { "title": "Communication should cross departments", "text": "Shared information prevents gaps when needs change or escalate." },
+        { "title": "Collaboration improves outcomes", "text": "Working together across teams supports safer, more consistent provision." }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Services & Venues",
+      "subtitle": "What we deliver and where our provision takes place.",
+      "descriptor": "Explore our services, venues and operational expectations before you open the blocks.",
+      "intro": "clubSENsational delivers support across multiple services, venues and environments. This module explores how services operate, how environments influence participation, and why consistency and adaptation remain essential.",
+      "points": [
+        "Understanding our services",
+        "Aquatic, physical and community environments",
+        "Adapting support across venues",
+        "Consistency, safety and professional practice"
+      ],
+      "outcomes": [
+        "Understand the different services delivered by clubSENsational",
+        "Recognise how environments influence participation and support",
+        "Understand why adaptation across venues is important",
+        "Identify how consistency and professional practice are maintained across services"
+      ],
+      "blocks": [
+        { "title": "Understanding Our Services", "hint": "Aquatic, physical activity, community support, and shared principles across services." },
+        { "title": "Aquatic, Physical & Community Environments", "hint": "How different environments shape participation and support." },
+        { "title": "Adapting Support Across Different Venues", "hint": "Flexibility and preparation when moving between venues." },
+        { "title": "Consistency, Safety & Professional Practice Across Services", "hint": "Maintaining quality and safe practice everywhere we deliver." }
+      ],
+      "recap_intro": "A quick recap of how services and venues shape participation, adaptation and safe practice.",
+      "recap_ideas": [
+        { "title": "Every environment changes participation", "text": "Aquatic, physical and community settings each bring different needs and risks." },
+        { "title": "Services share core principles", "text": "Structure, dignity and person centred support apply across all provision." },
+        { "title": "Adaptation is operational, not optional", "text": "Prepare support before arrival so transitions between venues stay smooth." },
+        { "title": "Consistency protects quality", "text": "Shared routines and standards help families know what to expect." },
+        { "title": "Safety follows you between venues", "text": "Supervision, environment checks and professional conduct remain essential everywhere." },
+        { "title": "Professional practice travels with you", "text": "Represent clubSENsational the same way in every service and location." }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Our Clients & Approach",
+      "subtitle": "Who we support and how we deliver person-centred practice.",
+      "descriptor": "Explore who we support, how needs influence participation, and why adaptable support remains essential.",
+      "intro": "At clubSENsational, every individual presents different strengths, communication styles, support needs and ways of experiencing the world. This module explores who we support and why person centred, structured and adaptable support remains essential.",
+      "points": [
+        "Understanding our clients",
+        "Behaviour, regulation and participation",
+        "Our support approach",
+        "Positive and meaningful experiences"
+      ],
+      "outcomes": [
+        "Understand the different individuals and needs supported by clubSENsational",
+        "Recognise how communication, sensory and emotional differences may influence participation",
+        "Understand the importance of person centred and adaptable support",
+        "Identify how structure, regulation and consistency support positive experiences"
+      ],
+      "blocks": [
+        { "title": "Understanding Our Clients", "hint": "Neurodiversity, communication, sensory responses, and strength based support." },
+        { "title": "Understanding Behaviour, Regulation & Participation", "hint": "Behaviour as communication, regulation, readiness, and co regulation." },
+        { "title": "Our Support Approach", "hint": "Person centred support, structure, visual systems, and gradual progression." },
+        { "title": "Creating Positive & Meaningful Experiences", "hint": "Confidence, emotional safety, meaningful participation, and family wellbeing." }
+      ],
+      "recap_intro": "A quick recap of person centred support, regulation and creating meaningful participant experiences.",
+      "recap_ideas": [
+        { "title": "Every participant is individual", "text": "Strengths, communication and sensory needs should guide how you support." },
+        { "title": "Behaviour communicates need", "text": "Pause, observe and respond before escalating demands or instruction." },
+        { "title": "Regulation enables participation", "text": "Readiness and co regulation matter as much as activity plans." },
+        { "title": "Person centred beats one size fits all", "text": "Adapt structure, visuals and pace to the person in front of you." },
+        { "title": "Emotional safety builds confidence", "text": "Predictability and respect help engagement grow over time." },
+        { "title": "Families are part of the picture", "text": "Positive experiences support trust, wellbeing and continuity beyond sessions." }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Your Role at clubSENsational",
+      "subtitle": "Expectations, conduct and professional standards for your role.",
+      "descriptor": "Explore responsibilities, professionalism and how your daily practice supports safe, person centred services.",
+      "intro": "Every staff member plays an important role in creating safe, structured and meaningful experiences. This module explores responsibilities, expectations and professional behaviours required across all clubSENsational services.",
+      "points": [
+        "Professionalism and expectations",
+        "Preparing and delivering sessions",
+        "Communication, teamwork and accountability",
+        "Representing clubSENsational in practice"
+      ],
+      "outcomes": [
+        "Understand the responsibilities and expectations of your role",
+        "Recognise the importance of professionalism, preparation and consistency",
+        "Understand how staff behaviour influences participant experiences",
+        "Identify how communication, teamwork and organisational systems support safe service delivery"
+      ],
+      "blocks": [
+        { "title": "Professionalism & Expectations", "hint": "Professional conduct, reliability, positive interaction, and shared standards." },
+        { "title": "Preparing & Delivering Sessions", "hint": "Session preparation, delivery, and maintaining safe practice." },
+        { "title": "Communication, Teamwork & Accountability", "hint": "Team communication, collaboration, and professional accountability." },
+        { "title": "Representing clubSENsational in Practice", "hint": "How staff represent the organisation in daily practice." }
+      ],
+      "recap_intro": "A quick recap of professionalism, preparation and how your daily practice shapes participant experiences.",
+      "recap_ideas": [
+        { "title": "Professionalism influences every experience", "text": "Conduct, reliability and attitude set the tone before teaching begins." },
+        { "title": "Preparation supports safer delivery", "text": "Plan resources, environment and support needs before participants arrive." },
+        { "title": "Consistency builds trust", "text": "Predictable routines help participants engage with confidence." },
+        { "title": "Communication should adapt to needs", "text": "Clear, respectful interaction supports understanding and cooperation." },
+        { "title": "Teamwork protects quality", "text": "Share information, escalate concerns and support colleagues openly." },
+        { "title": "You represent the organisation daily", "text": "How you act in sessions shapes reputation, safety and participant wellbeing." }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Policies & Protection",
+      "subtitle": "Safeguarding, safety, reporting systems and policies that protect participants across all services.",
+      "descriptor": "Understand the policies, procedures and operational responsibilities that support safety, safeguarding and participant protection.",
+      "intro": "Safe, ethical and professional practice forms the foundation of every clubSENsational service and environment. This module introduces key policies, procedures and operational responsibilities that help protect participants, families, staff and the wider organisation.",
+      "points": [
+        "Safety and safeguarding",
+        "Respect, ethics and professional boundaries",
+        "Reporting, confidentiality and data protection",
+        "Policies in everyday practice"
+      ],
+      "outcomes": [
+        "Understand safeguarding, safety and participant protection responsibilities",
+        "Recognise the importance of professional conduct, confidentiality and ethical practice",
+        "Understand how reporting systems and procedures support safe services",
+        "Identify how policies connect to real operational practice across environments"
+      ],
+      "blocks": [
+        { "title": "Safety & Safeguarding", "hint": "Safeguarding, safe environments, supervision and emergency response." },
+        { "title": "Respect, Ethics & Professional Boundaries", "hint": "Conduct, dignity, ethics and professional boundaries in practice." },
+        { "title": "Reporting, Confidentiality & Data Protection", "hint": "Reporting systems, confidentiality and data protection responsibilities." },
+        { "title": "Policies in Everyday Practice", "hint": "How policies connect to daily operational practice across services." }
+      ],
+      "recap_intro": "A quick recap of safeguarding, ethics, reporting and how policies guide everyday professional decisions.",
+      "recap_ideas": [
+        { "title": "Safeguarding is everyone's responsibility", "text": "Stay alert, act early and follow procedures when something feels wrong." },
+        { "title": "Safety starts with the environment", "text": "Supervision, risk awareness and emergency readiness protect participants." },
+        { "title": "Boundaries protect trust", "text": "Respect, dignity and ethical conduct keep relationships professional." },
+        { "title": "Report concerns without delay", "text": "Use agreed channels so issues are recorded and handled properly." },
+        { "title": "Confidentiality requires care", "text": "Share information only with people who need it for safe support." },
+        { "title": "Policies guide daily decisions", "text": "Translate procedures into practice during sessions, travel and communication." }
+      ]
+    }
+  ]
+}

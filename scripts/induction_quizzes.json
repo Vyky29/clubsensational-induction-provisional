@@ -1,0 +1,896 @@
+{
+  "1": {
+    "hero_subtitle": "Test your understanding of clubSENsational, our mission and approach.",
+    "questions": [
+      {
+        "type": "single",
+        "text": "What is one of the main aims of clubSENsational services?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Competitive performance only"
+          },
+          {
+            "letter": "B",
+            "text": "Supporting social communication, independence and wellbeing"
+          },
+          {
+            "letter": "C",
+            "text": "Delivering unstructured activities without support"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "type": "single",
+        "text": "What best describes the clubSENsational approach?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "One fixed approach for every participant"
+          },
+          {
+            "letter": "B",
+            "text": "A person centred and adaptable support model"
+          },
+          {
+            "letter": "C",
+            "text": "Support focused only on academic outcomes"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "type": "single",
+        "text": "Why is consistency important across services?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Because all participants respond identically"
+          },
+          {
+            "letter": "B",
+            "text": "Because consistency helps support confidence, structure and participation"
+          },
+          {
+            "letter": "C",
+            "text": "Because routines should constantly change"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "type": "multiple",
+        "text": "Which areas form part of the clubSENsational approach?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Physical wellbeing"
+          },
+          {
+            "letter": "B",
+            "text": "Emotional wellbeing"
+          },
+          {
+            "letter": "C",
+            "text": "Social communication"
+          },
+          {
+            "letter": "D",
+            "text": "Ignoring individual differences"
+          }
+        ],
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "type": "multiple",
+        "text": "Which environments may be used within clubSENsational services?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Swimming pools"
+          },
+          {
+            "letter": "B",
+            "text": "Community environments"
+          },
+          {
+            "letter": "C",
+            "text": "Physical activity spaces"
+          },
+          {
+            "letter": "D",
+            "text": "Airports only"
+          }
+        ],
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "type": "tf",
+        "text": "Every participant should receive identical support approaches regardless of individual needs.",
+        "correct": "F"
+      },
+      {
+        "type": "tf",
+        "text": "Positive relationships and emotional safety influence participation and confidence.",
+        "correct": "T"
+      },
+      {
+        "type": "match",
+        "text": "Match the following.",
+        "pairs": [
+          {
+            "label": "Mission",
+            "answer": "Meaningful participation"
+          },
+          {
+            "label": "Person Centred Support",
+            "answer": "Individual adaptation"
+          },
+          {
+            "label": "Consistency",
+            "answer": "Predictability and structure"
+          },
+          {
+            "label": "Key Partners",
+            "answer": "Collaboration and shared resources"
+          }
+        ]
+      }
+    ]
+  },
+  "2": {
+    "hero_subtitle": "Test your understanding of teams, departments and how we work together.",
+    "questions": [
+      {
+        "type": "single",
+        "text": "Why is teamwork important within clubSENsational?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Because staff work independently without communication"
+          },
+          {
+            "letter": "B",
+            "text": "Because teamwork supports safer and more organised services"
+          },
+          {
+            "letter": "C",
+            "text": "Because departments should remain separate"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "type": "single",
+        "text": "What is one responsibility of operational systems?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Reducing communication between teams"
+          },
+          {
+            "letter": "B",
+            "text": "Supporting organisation and coordination"
+          },
+          {
+            "letter": "C",
+            "text": "Removing safeguarding procedures"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "type": "single",
+        "text": "Why are clear roles important across teams?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Because structure improves coordination and accountability"
+          },
+          {
+            "letter": "B",
+            "text": "Because staff should complete every role alone"
+          },
+          {
+            "letter": "C",
+            "text": "Because departments never collaborate"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "type": "multiple",
+        "text": "Which areas may form part of organisational operations?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Service delivery"
+          },
+          {
+            "letter": "B",
+            "text": "Administration"
+          },
+          {
+            "letter": "C",
+            "text": "Safeguarding"
+          },
+          {
+            "letter": "D",
+            "text": "Ignoring communication"
+          }
+        ],
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "type": "multiple",
+        "text": "What helps maintain effective teamwork?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Communication"
+          },
+          {
+            "letter": "B",
+            "text": "Shared responsibility"
+          },
+          {
+            "letter": "C",
+            "text": "Respectful collaboration"
+          },
+          {
+            "letter": "D",
+            "text": "Avoiding coordination"
+          }
+        ],
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "type": "tf",
+        "text": "Communication across teams supports participant continuity and organisation.",
+        "correct": "T"
+      },
+      {
+        "type": "tf",
+        "text": "Operational systems are unrelated to service quality.",
+        "correct": "F"
+      },
+      {
+        "type": "match",
+        "text": "Match the following.",
+        "pairs": [
+          {
+            "label": "Leadership",
+            "answer": "Organisational guidance"
+          },
+          {
+            "label": "Operations",
+            "answer": "Coordination and systems"
+          },
+          {
+            "label": "Service Delivery",
+            "answer": "Participant support"
+          },
+          {
+            "label": "Teamwork",
+            "answer": "Shared responsibility across departments"
+          }
+        ]
+      }
+    ]
+  },
+  "3": {
+    "hero_subtitle": "Test your understanding of services, venues and adaptable support.",
+    "questions": [
+      {
+        "type": "single",
+        "text": "Why do different environments require adaptable support?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Because all environments feel identical"
+          },
+          {
+            "letter": "B",
+            "text": "Because environments influence participation and regulation differently"
+          },
+          {
+            "letter": "C",
+            "text": "Because routines should always be removed"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "type": "single",
+        "text": "What helps support successful transitions between venues?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Increased unpredictability"
+          },
+          {
+            "letter": "B",
+            "text": "Preparation and structure"
+          },
+          {
+            "letter": "C",
+            "text": "Removing communication supports"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "type": "single",
+        "text": "Why is consistency important across services?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Because participants benefit from familiar systems and support"
+          },
+          {
+            "letter": "B",
+            "text": "Because all venues operate identically"
+          },
+          {
+            "letter": "C",
+            "text": "Because flexibility should never happen"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "type": "multiple",
+        "text": "Which environments may form part of services?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Aquatic environments"
+          },
+          {
+            "letter": "B",
+            "text": "Physical activity spaces"
+          },
+          {
+            "letter": "C",
+            "text": "Community settings"
+          },
+          {
+            "letter": "D",
+            "text": "Random unsafe environments"
+          }
+        ],
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "type": "multiple",
+        "text": "What may influence participation within environments?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sensory input"
+          },
+          {
+            "letter": "B",
+            "text": "Noise levels"
+          },
+          {
+            "letter": "C",
+            "text": "Predictability"
+          },
+          {
+            "letter": "D",
+            "text": "Completely unrelated factors only"
+          }
+        ],
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "type": "tf",
+        "text": "Support approaches may need adapting across different venues.",
+        "correct": "T"
+      },
+      {
+        "type": "tf",
+        "text": "Emotional safety and structure remain important across all environments.",
+        "correct": "T"
+      },
+      {
+        "type": "match",
+        "text": "Match the following.",
+        "pairs": [
+          {
+            "label": "Aquatic Environment",
+            "answer": "Water based support"
+          },
+          {
+            "label": "Community Environment",
+            "answer": "Real world participation"
+          },
+          {
+            "label": "Structure",
+            "answer": "Predictability and organisation"
+          },
+          {
+            "label": "Adaptation",
+            "answer": "Flexible support across venues"
+          }
+        ]
+      }
+    ]
+  },
+  "4": {
+    "hero_subtitle": "Test your understanding of our clients and person centred support.",
+    "questions": [
+      {
+        "type": "single",
+        "text": "Why is person centred support important?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Because all participants follow identical pathways"
+          },
+          {
+            "letter": "B",
+            "text": "Because individuals require different support approaches"
+          },
+          {
+            "letter": "C",
+            "text": "Because adaptation reduces professionalism"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "type": "single",
+        "text": "What may influence regulation and participation?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sensory experiences"
+          },
+          {
+            "letter": "B",
+            "text": "Environmental demands"
+          },
+          {
+            "letter": "C",
+            "text": "Emotional safety"
+          },
+          {
+            "letter": "D",
+            "text": "All of the above"
+          }
+        ],
+        "correct": "D"
+      },
+      {
+        "type": "single",
+        "text": "Why are visual systems valuable?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "They increase unpredictability"
+          },
+          {
+            "letter": "B",
+            "text": "They support communication and understanding"
+          },
+          {
+            "letter": "C",
+            "text": "They replace all interaction permanently"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "type": "multiple",
+        "text": "Which areas may influence participant experience?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Communication"
+          },
+          {
+            "letter": "B",
+            "text": "Sensory processing"
+          },
+          {
+            "letter": "C",
+            "text": "Emotional wellbeing"
+          },
+          {
+            "letter": "D",
+            "text": "Structure and predictability"
+          }
+        ],
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "type": "multiple",
+        "text": "What helps build confidence over time?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Positive experiences"
+          },
+          {
+            "letter": "B",
+            "text": "Emotional safety"
+          },
+          {
+            "letter": "C",
+            "text": "Supportive relationships"
+          },
+          {
+            "letter": "D",
+            "text": "Overwhelming environments"
+          }
+        ],
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "type": "tf",
+        "text": "Behaviour should always be understood within context.",
+        "correct": "T"
+      },
+      {
+        "type": "tf",
+        "text": "Meaningful progress looks identical for every participant.",
+        "correct": "F"
+      },
+      {
+        "type": "match",
+        "text": "Match the following.",
+        "pairs": [
+          {
+            "label": "Visual Supports",
+            "answer": "Communication and predictability"
+          },
+          {
+            "label": "Co Regulation",
+            "answer": "Emotional support"
+          },
+          {
+            "label": "Meaningful Participation",
+            "answer": "Individual progress and engagement"
+          },
+          {
+            "label": "Person Centred Approach",
+            "answer": "Adapting support to the individual"
+          }
+        ]
+      }
+    ]
+  },
+  "5": {
+    "hero_subtitle": "Test your understanding of your role, professionalism and session delivery.",
+    "questions": [
+      {
+        "type": "single",
+        "text": "Why is professionalism important within services?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Because professionalism only matters during meetings"
+          },
+          {
+            "letter": "B",
+            "text": "Because staff behaviour influences participant experiences"
+          },
+          {
+            "letter": "C",
+            "text": "Because professionalism is unrelated to safety"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "type": "single",
+        "text": "Why is preparation important before sessions?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Because preparation supports safer and more organised delivery"
+          },
+          {
+            "letter": "B",
+            "text": "Because environments organise themselves automatically"
+          },
+          {
+            "letter": "C",
+            "text": "Because visuals are unnecessary"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "type": "single",
+        "text": "Why is teamwork important during service delivery?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Because teamwork improves support and organisation"
+          },
+          {
+            "letter": "B",
+            "text": "Because staff should work independently"
+          },
+          {
+            "letter": "C",
+            "text": "Because communication reduces flexibility"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "type": "multiple",
+        "text": "Which areas form part of professional practice?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Communication"
+          },
+          {
+            "letter": "B",
+            "text": "Preparation"
+          },
+          {
+            "letter": "C",
+            "text": "Accountability"
+          },
+          {
+            "letter": "D",
+            "text": "Respectful interaction"
+          }
+        ],
+        "correct": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "type": "multiple",
+        "text": "What may help support effective session delivery?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Structure"
+          },
+          {
+            "letter": "B",
+            "text": "Adaptability"
+          },
+          {
+            "letter": "C",
+            "text": "Organisation"
+          },
+          {
+            "letter": "D",
+            "text": "Ignoring participant needs"
+          }
+        ],
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "type": "tf",
+        "text": "Professional standards should remain consistent across venues.",
+        "correct": "T"
+      },
+      {
+        "type": "tf",
+        "text": "Staff behaviour can influence participant confidence and wellbeing.",
+        "correct": "T"
+      },
+      {
+        "type": "match",
+        "text": "Match the following.",
+        "pairs": [
+          {
+            "label": "Preparation",
+            "answer": "Organised session delivery"
+          },
+          {
+            "label": "Accountability",
+            "answer": "Professional responsibility"
+          },
+          {
+            "label": "Teamwork",
+            "answer": "Shared participant support"
+          },
+          {
+            "label": "Professionalism",
+            "answer": "Representing clubSENsational with care"
+          }
+        ]
+      }
+    ]
+  },
+  "6": {
+    "hero_subtitle": "Test your understanding of safeguarding, policies and professional protection.",
+    "questions": [
+      {
+        "type": "single",
+        "text": "Why is safeguarding everyone's responsibility?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Because only leadership teams manage participant safety"
+          },
+          {
+            "letter": "B",
+            "text": "Because all staff contribute towards safe environments"
+          },
+          {
+            "letter": "C",
+            "text": "Because safeguarding only applies during incidents"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "type": "single",
+        "text": "Why is accurate reporting important?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Because concerns should only be discussed verbally"
+          },
+          {
+            "letter": "B",
+            "text": "Because reporting supports safety and accountability"
+          },
+          {
+            "letter": "C",
+            "text": "Because procedures are unrelated to participant wellbeing"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "type": "single",
+        "text": "Why are professional boundaries important?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Because boundaries help maintain safe and appropriate relationships"
+          },
+          {
+            "letter": "B",
+            "text": "Because professionalism only matters during sessions"
+          },
+          {
+            "letter": "C",
+            "text": "Because boundaries reduce emotional safety"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "type": "multiple",
+        "text": "Which areas form part of safeguarding responsibilities?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Supervision"
+          },
+          {
+            "letter": "B",
+            "text": "Reporting concerns"
+          },
+          {
+            "letter": "C",
+            "text": "Emotional safety"
+          },
+          {
+            "letter": "D",
+            "text": "Ignoring environmental risks"
+          }
+        ],
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "type": "multiple",
+        "text": "Which systems support safer organisational practice?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Reporting systems"
+          },
+          {
+            "letter": "B",
+            "text": "Safeguarding procedures"
+          },
+          {
+            "letter": "C",
+            "text": "Staff portal systems"
+          },
+          {
+            "letter": "D",
+            "text": "Informal undocumented communication only"
+          }
+        ],
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "type": "tf",
+        "text": "Confidential information should only be shared appropriately and securely.",
+        "correct": "T"
+      },
+      {
+        "type": "tf",
+        "text": "Policies and procedures should remain connected to real practice.",
+        "correct": "T"
+      },
+      {
+        "type": "match",
+        "text": "Match the following.",
+        "pairs": [
+          {
+            "label": "Safeguarding",
+            "answer": "Participant protection"
+          },
+          {
+            "label": "Confidentiality",
+            "answer": "Respectful information handling"
+          },
+          {
+            "label": "Incident Reporting",
+            "answer": "Organisational accountability"
+          },
+          {
+            "label": "Data Protection",
+            "answer": "Secure and appropriate information use"
+          }
+        ]
+      }
+    ]
+  }
+}
