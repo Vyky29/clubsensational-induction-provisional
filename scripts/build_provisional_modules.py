@@ -76,6 +76,7 @@ def render_dashboard() -> str:
 <link rel="stylesheet" href="/assets/training-content-containment.css" />
 <link rel="stylesheet" href="/assets/portal-induction-atmosphere.css" />
 <link rel="stylesheet" href="/assets/induction-pathway-hub.css" />
+<link rel="stylesheet" href="/assets/provisional-certificate.css" />
 </head>
 <body>
 <section class="training-page" id="mainContent">
@@ -96,8 +97,25 @@ def render_dashboard() -> str:
     <div class="modules-grid" id="pathway-modules">
 {cards}
     </div>
+    <section class="induction-certificate-panel" id="inductionCertificatePanel" hidden aria-labelledby="inductionCertTitle">
+      <div class="induction-certificate-panel__inner">
+        <div class="induction-certificate-panel__copy">
+          <p class="induction-certificate-panel__kicker">Training complete</p>
+          <h2 id="inductionCertTitle">Congratulations - you finished General Induction</h2>
+          <p>Download your certificate with the clubSENsational logo. Keep it for your staff learning record.</p>
+          <p class="induction-certificate-panel__learner" id="inductionCertificateLearnerName"></p>
+          <div class="induction-certificate-panel__actions">
+            <button type="button" class="btn-certificate-download" id="downloadInductionCertificate">Download certificate</button>
+          </div>
+        </div>
+        <div class="induction-certificate-panel__logo">
+          <img src="/assets/clubsensational-portal-logo.png" alt="clubSENsational" width="200" height="80" />
+        </div>
+      </div>
+    </section>
   </div>
 </section>
+<script src="/shared/provisional-certificate.js"></script>
 <script src="/shared/provisional-pathway.js"></script>
 </body>
 </html>
@@ -157,6 +175,7 @@ def render_module(mod: dict) -> str:
   <link rel="stylesheet" href="/assets/provisional-video.css" />
   <link rel="stylesheet" href="/assets/provisional-ui-overrides.css" />
   <link rel="stylesheet" href="/assets/induction-portal-theme.css" />
+  <link rel="stylesheet" href="/assets/provisional-certificate.css" />
 </head>
 <body class="training-template-body">
 <div class="portal" data-induction-module="{n}" data-provisional-induction="1">
@@ -273,6 +292,7 @@ def render_module(mod: dict) -> str:
   </main>
 </div>
 <script src="/shared/provisional-module-flow.js"></script>
+<script src="/shared/provisional-certificate.js"></script>
 <script src="/shared/provisional-quiz-flow.js"></script>
 </body>
 </html>

@@ -25,6 +25,12 @@
       badge.textContent = st.label;
       badge.className = 'module-status-badge ' + st.cls;
     }
+    if (
+      window.provisionalInductionCertificate &&
+      typeof window.provisionalInductionCertificate.refreshDashboardPanel === 'function'
+    ) {
+      window.provisionalInductionCertificate.refreshDashboardPanel();
+    }
   };
 
   provisionalRefreshPathway();

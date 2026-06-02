@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="/assets/provisional-video.css" />
   <link rel="stylesheet" href="/assets/provisional-ui-overrides.css" />
   <link rel="stylesheet" href="/assets/induction-portal-theme.css" />
+  <link rel="stylesheet" href="/assets/provisional-certificate.css" />
 </head>
 <body class="training-template-body">
 <div class="portal" data-induction-module="4" data-provisional-induction="1">
@@ -306,7 +307,9 @@
                 <h2>Quiz results</h2>
                 <p class="score-value" id="scoreValueM4">0/8</p>
                 <p class="score-msg" id="scoreMsgM4"></p>
-                <a href="/general-induction/modules/module-5/" class="back-link quiz-next-btn" style="display:none">Continue to Module 5</a>
+                <div class="module-result-actions">
+                  <a href="/general-induction/modules/module-5/" class="back-link quiz-next-btn" style="display:none">Continue to Module 5</a>
+                </div>
               </div>
             </div>
           </div>
@@ -317,6 +320,7 @@
   </main>
 </div>
 <script src="/shared/provisional-module-flow.js"></script>
+<script src="/shared/provisional-certificate.js"></script>
 <script src="/shared/provisional-quiz-flow.js"></script>
 </body>
 </html>

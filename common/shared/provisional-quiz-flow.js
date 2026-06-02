@@ -180,22 +180,42 @@
       });
 
       var passed = score === total;
-      if (scoreValue) scoreValue.textContent = passed ? 'Quiz passed - ' + score + '/' + total : score + '/' + total;
-      if (scoreMsg) {
-        scoreMsg.textContent = passed
-          ? 'You passed this module quiz. Continue to the next module when you are ready.'
-          : 'You need all 8 answers correct before moving on. Review the video and try again.';
-      }
-      if (scoreCard) {
-        scoreCard.classList.add('show');
-        scoreCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      var isFinalModule = moduleNum === '6';
+
+      if (passed && isFinalModule && window.provisionalInductionCertificate) {
+        if (typeof window.provisionalInductionMarkQuizPass === 'function') {
+          window.provisionalInductionMarkQuizPass();
+        }
+        window.provisionalInductionCertificate.markTrainingCompleteIfReady();
+        window.provisionalInductionCertificate.showModule6FinalResult(scoreCard, true);
+        if (scoreCard) {
+          scoreCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } else {
+        if (scoreValue) scoreValue.textContent = passed ? 'Quiz passed - ' + score + '/' + total : score + '/' + total;
+        if (scoreMsg) {
+          scoreMsg.textContent = passed
+            ? 'You passed this module quiz. Continue to the next module when you are ready.'
+            : 'You need all 8 answers correct before moving on. Review the video and try again.';
+        }
+        if (scoreCard) {
+          scoreCard.classList.add('show');
+          scoreCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        var nextBtn = root.querySelector('.quiz-next-btn');
+        if (nextBtn) nextBtn.style.display = passed ? 'inline-flex' : 'none';
       }
 
-      var nextBtn = root.querySelector('.quiz-next-btn');
-      if (nextBtn) nextBtn.style.display = passed ? 'inline-flex' : 'none';
-
-      if (passed && typeof window.provisionalInductionMarkQuizPass === 'function') {
+      if (passed && !isFinalModule && typeof window.provisionalInductionMarkQuizPass === 'function') {
         window.provisionalInductionMarkQuizPass();
+      }
+      if (
+        passed &&
+        !isFinalModule &&
+        window.provisionalInductionCertificate &&
+        typeof window.provisionalInductionCertificate.markTrainingCompleteIfReady === 'function'
+      ) {
+        window.provisionalInductionCertificate.markTrainingCompleteIfReady();
       }
       if (submitBtn) submitBtn.disabled = passed || countAnswered() < total;
     };

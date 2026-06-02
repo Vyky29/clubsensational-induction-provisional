@@ -97,6 +97,12 @@ def quiz_section_html(module_num: int, mod: dict, next_href: str, next_lbl: str)
     is_final = module_num >= 6
     next_btn = "Return to General Induction" if is_final else f"Continue to {next_lbl}"
     next_link = "/general-induction/" if is_final else next_href
+    final_cert_btn = (
+        '                <button type="button" class="btn-submit" data-download-certificate hidden>Download certificate</button>\n'
+        if is_final
+        else ""
+    )
+    score_card_class = "score-card module-result-card" if is_final else "score-card"
     cards = "\n".join(question_card(i, q, module_num) for i, q in enumerate(quiz["questions"], 1))
     return f"""      <section class="section gated-locked" id="quiz" data-stage="quiz" data-unlock-after="complete">
         <div class="section-top"><span class="section-pill">Module quiz</span></div>
@@ -119,11 +125,13 @@ def quiz_section_html(module_num: int, mod: dict, next_href: str, next_lbl: str)
                 <p class="quiz-submit-hint" id="quizSubmitHintM{module_num}">Answer all 8 questions to enable Submit.</p>
                 <button type="submit" class="btn-submit" id="submitBtnM{module_num}" disabled>Submit answers</button>
               </form>
-              <div class="score-card" id="scoreCardM{module_num}">
+              <div class="{score_card_class}" id="scoreCardM{module_num}">
                 <h2>Quiz results</h2>
                 <p class="score-value" id="scoreValueM{module_num}">0/8</p>
                 <p class="score-msg" id="scoreMsgM{module_num}"></p>
-                <a href="{next_link}" class="back-link quiz-next-btn" style="display:none">{next_btn}</a>
+                <div class="module-result-actions">
+{final_cert_btn}                  <a href="{next_link}" class="back-link quiz-next-btn" style="display:none">{next_btn}</a>
+                </div>
               </div>
             </div>
           </div>
